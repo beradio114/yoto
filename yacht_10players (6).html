@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="ja"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMzg3ODEzODUwODg3MzYxNDU4OSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzc0MWI3MTgwNTAyNDAxODRfeWFjaHRfMTBwbGF5ZXJzLmh0bWwtNjU4In0sImV4cCI6MTc5NTA2ODUyOCwiaWF0IjoxNzk1MDY0OTI4LCJhbGciOiJSUzI1NiJ9.BbsGsrXA1XSBryOkvDKjEmcPa-IWfsiMzzYM7Hh19P0Y9p372vFqXgg1uDzCcoiHHw2Ib4uXYSUw_YjK3awE21Pt5LnOHrg0uZCyw7HazmFTH1cEzoJHHqcNY9HD2bxX5dOl_e26z0SfGw7LkPLsFLRYjqI1JuEJs_tT_HBt4zJEn0Q7PV0qxfFtobrarna01lGLwm1c0UZrGK_32ZSy-CeWHeseqJUtNXgNLoadm4gqYFjhZ5MvXeB6u2av5I_1lAdgOBEB0l39lwifyAMwqX3dVHGwmp2wHCtmK9WHKZW1tE8Jq_98N1sWo9y-9JqVRrgExCG2XkM1k1KIZJSfKQ","c_741b718050240184_yacht_10players.html-658")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ヨット 10人対戦 | オンライン &amp; ローカル対応</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0%, #020617 100%);
+      color: #f8fafc;
+      min-height: 100vh;
+    }
+
+    /* 3D風の立体サイコロ */
+    .die-btn {
+      perspective: 600px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .die-face {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #ffffff 0%, #e2e8f0 100%);
+      box-shadow:
+        0 6px 0 #94a3b8,
+        0 10px 20px rgba(0, 0, 0, 0.45),
+        inset 0 2px 3px rgba(255, 255, 255, 0.9);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 10px;
+      gap: 3px;
+      position: relative;
+      transition: all 0.18s ease;
+    }
+    @media (min-width: 640px) {
+      .die-face {
+        width: 74px;
+        height: 74px;
+        padding: 11px;
+      }
+    }
+    .die-btn.held .die-face {
+      background: linear-gradient(145deg, #fef08a 0%, #fde047 100%);
+      box-shadow:
+        0 4px 0 #ca8a04,
+        0 0 0 3px #facc15,
+        0 10px 24px rgba(250, 204, 21, 0.35);
+      transform: translateY(-4px);
+    }
+    .die-btn.rolling .die-face {
+      animation: diceRoll 0.32s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+    @keyframes diceRoll {
+      0% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(-14deg) scale(1.07) translateY(-6px); }
+      50% { transform: rotate(12deg) scale(0.95) translateY(2px); }
+      75% { transform: rotate(-8deg) scale(1.05) translateY(-4px); }
+      100% { transform: rotate(0deg) scale(1); }
+    }
+    .pip {
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+      background: #0f172a;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.12s ease, transform 0.12s ease;
+    }
+    .pip.on {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .pip.red {
+      background: #dc2626;
+    }
+
+    /* スコア表の固定列 */
+    .sticky-col {
+      position: sticky;
+      left: 0;
+      z-index: 10;
+    }
+
+    .custom-scroll::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #0f172a;
+      border-radius: 9999px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 9999px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-1{bottom:-0.25rem}.-right-1{right:-0.25rem}.bottom-5{bottom:1.25rem}.left-1\/2{left:50%}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-20{height:5rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-7{height:1.75rem}.max-h-\[85vh\]{max-height:85vh}.max-h-\[90vh\]{max-height:90vh}.min-h-\[22px\]{min-height:22px}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-44{width:11rem}.w-9{width:2.25rem}.w-full{width:100%}.w-7{width:1.75rem}.w-8{width:2rem}.min-w-\[680px\]{min-width:680px}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-crosshair{cursor:crosshair}.cursor-pointer{cursor:pointer}.touch-none{touch-action:none}.select-none{-webkit-user-select:none;user-select:none}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-800\/80 > :not([hidden]) ~ :not([hidden]){border-color:rgb(30 41 59 / 0.8)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-400\/40{border-color:rgb(251 191 36 / 0.4)}.border-emerald-400\/40{border-color:rgb(52 211 153 / 0.4)}.border-indigo-500\/20{border-color:rgb(99 102 241 / 0.2)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-purple-400\/40{border-color:rgb(192 132 252 / 0.4)}.border-rose-500\/40{border-color:rgb(244 63 94 / 0.4)}.border-sky-400{--tw-border-opacity:1;border-color:rgb(56 189 248 / var(--tw-border-opacity, 1))}.border-sky-400\/30{border-color:rgb(56 189 248 / 0.3)}.border-sky-400\/40{border-color:rgb(56 189 248 / 0.4)}.border-sky-400\/50{border-color:rgb(56 189 248 / 0.5)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.bg-amber-500\/20{background-color:rgb(245 158 11 / 0.2)}.bg-black\/75{background-color:rgb(0 0 0 / 0.75)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-600\/25{background-color:rgb(5 150 105 / 0.25)}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-indigo-950\/30{background-color:rgb(30 27 75 / 0.3)}.bg-purple-600\/30{background-color:rgb(147 51 234 / 0.3)}.bg-rose-600\/20{background-color:rgb(225 29 72 / 0.2)}.bg-sky-500{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.bg-sky-500\/20{background-color:rgb(14 165 233 / 0.2)}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-sky-600\/25{background-color:rgb(2 132 199 / 0.25)}.bg-sky-600\/30{background-color:rgb(2 132 199 / 0.3)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/75{background-color:rgb(15 23 42 / 0.75)}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-900\/85{background-color:rgb(15 23 42 / 0.85)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/60{background-color:rgb(2 6 23 / 0.6)}.bg-slate-950\/70{background-color:rgb(2 6 23 / 0.7)}.bg-slate-950\/80{background-color:rgb(2 6 23 / 0.8)}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-slate-800\/90{background-color:rgb(30 41 59 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-sky-400{--tw-gradient-from:#38bdf8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(56 189 248 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-sky-500{--tw-gradient-from:#0ea5e9 var(--tw-gradient-from-position);--tw-gradient-to:rgb(14 165 233 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-indigo-600{--tw-gradient-to:#4f46e5 var(--tw-gradient-to-position)}.to-teal-600{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-2\.5{padding:0.625rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-4{padding-bottom:1rem}.pl-5{padding-left:1.25rem}.pt-2{padding-top:0.5rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-emerald-200{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-purple-200{--tw-text-opacity:1;color:rgb(233 213 255 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-sky-200{--tw-text-opacity:1;color:rgb(186 230 253 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-amber-400{accent-color:#fbbf24}.accent-emerald-400{accent-color:#34d399}.accent-sky-400{accent-color:#38bdf8}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-600\/20{--tw-shadow-color:rgb(79 70 229 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-sky-500\/20{--tw-shadow-color:rgb(14 165 233 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-sky-500\/25{--tw-shadow-color:rgb(14 165 233 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-sky-500\/30 *::selection{background-color:rgb(14 165 233 / 0.3)}.selection\:bg-sky-500\/30::selection{background-color:rgb(14 165 233 / 0.3)}.hover\:bg-amber-500\/30:hover{background-color:rgb(245 158 11 / 0.3)}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600\/40:hover{background-color:rgb(5 150 105 / 0.4)}.hover\:bg-indigo-500:hover{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-600\/50:hover{background-color:rgb(147 51 234 / 0.5)}.hover\:bg-rose-600\/40:hover{background-color:rgb(225 29 72 / 0.4)}.hover\:bg-sky-500:hover{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-600\/40:hover{background-color:rgb(2 132 199 / 0.4)}.hover\:bg-sky-600\/50:hover{background-color:rgb(2 132 199 / 0.5)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:from-emerald-400:hover{--tw-gradient-from:#34d399 var(--tw-gradient-from-position);--tw-gradient-to:rgb(52 211 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-sky-400:hover{--tw-gradient-from:#38bdf8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(56 189 248 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-indigo-500:hover{--tw-gradient-to:#6366f1 var(--tw-gradient-to-position)}.hover\:to-teal-500:hover{--tw-gradient-to:#14b8a6 var(--tw-gradient-to-position)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(245 158 11 / var(--tw-ring-opacity, 1))}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129 / var(--tw-ring-opacity, 1))}.focus\:ring-sky-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(14 165 233 / var(--tw-ring-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:from-slate-700:disabled{--tw-gradient-from:#334155 var(--tw-gradient-from-position);--tw-gradient-to:rgb(51 65 85 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.disabled\:to-slate-700:disabled{--tw-gradient-to:#334155 var(--tw-gradient-to-position)}.disabled\:text-slate-400:disabled{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:w-64{width:16rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.sm\:gap-3\.5{gap:0.875rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:w-auto{width:auto}.lg\:grid-cols-10{grid-template-columns:repeat(10, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}}</style></head>
+<body class="antialiased selection:bg-sky-500/30">
+  <div id="app" class="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
+    <!-- ヘッダー -->
+    <header class="flex flex-wrap items-center justify-between gap-3 mb-5 pb-4 border-b border-slate-800/80">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20 text-xl font-extrabold">
+          🎲
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-extrabold tracking-tight text-white flex items-center gap-2">
+            ヨット 10人対戦
+            <span id="mode-badge" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/30">最大10人対応</span>
+          </h1>
+          <p class="text-xs text-slate-400">ヤッツィー形式ルール・カスタムルール・部屋番号オンライン対戦対応</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <button id="btn-copy-data-url" type="button" class="px-3 py-2 rounded-lg bg-sky-600/25 hover:bg-sky-600/40 border border-sky-400/40 text-xs font-semibold text-sky-200 transition" title="アドレスバーに貼って開けるURLをコピー">
+          🔗 アドレス用URLコピー
+        </button>
+        <button id="btn-download-html" type="button" class="px-3 py-2 rounded-lg bg-emerald-600/25 hover:bg-emerald-600/40 border border-emerald-400/40 text-xs font-semibold text-emerald-200 transition" title="友達に送れるHTMLファイルとして保存">
+          📥 HTML保存
+        </button>
+        <button id="btn-sound" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-slate-200 transition flex items-center gap-1.5" title="効果音 ON/OFF">
+          <span id="sound-icon">🔊</span>
+          <span id="sound-label" class="hidden sm:inline">効果音 ON</span>
+        </button>
+        <button id="btn-rules" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-slate-200 transition">
+          📖 ルール
+        </button>
+        <button id="btn-open-setup" type="button" class="px-3 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white transition shadow-md shadow-indigo-600/20">
+          ⚙️ 設定 / ロビー
+        </button>
+      </div>
+    </header>
+
+    <!-- セットアップ画面 -->
+    <section id="setup-screen" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-2xl mb-6">
+      <!-- プレイモード切替タブ -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-5 pb-4 border-b border-slate-800">
+        <div class="inline-flex rounded-xl bg-slate-950 p-1 border border-slate-800">
+          <button id="tab-local-mode" type="button" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-sky-600 text-white transition">
+            🏠 1台で遊ぶ（ローカル / AI）
+          </button>
+          <button id="tab-online-mode" type="button" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition">
+            🌐 オンライン対戦（部屋番号）
+          </button>
+        </div>
+
+        <div id="local-presets" class="flex flex-wrap items-center gap-2">
+          <button id="btn-preset-10-humans" type="button" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-medium text-slate-200 transition">
+            👥 人間10人
+          </button>
+          <button id="btn-preset-1v9" type="button" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-medium text-slate-200 transition">
+            🤖 人間1＋AI9
+          </button>
+        </div>
+      </div>
+
+      <!-- オンライン対戦ロビーパネル -->
+      <div id="online-panel" class="hidden mb-5 p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/30 space-y-4">
+        <!-- 自分のプロフィール（オンライン用） -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-indigo-500/20">
+          <div class="flex items-center gap-3">
+            <button id="btn-edit-my-icon" type="button" class="relative group focus:outline-none" title="クリックしてアイコンを作成・変更">
+              <div id="my-online-avatar" class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl border-2 border-sky-400 shadow-lg overflow-hidden bg-slate-800" style="background: rgb(2, 132, 199); border-color: rgb(56, 189, 248);">🎲</div>
+              <span class="absolute -bottom-1 -right-1 text-[10px] bg-sky-500 text-white px-1.5 py-0.5 rounded-full font-bold shadow">編集</span>
+            </button>
+            <div>
+              <label for="my-online-name" class="block text-xs font-semibold text-slate-400 mb-1">あなたの名前</label>
+              <input id="my-online-name" type="text" maxlength="12" value="プレイヤー" class="rounded-lg bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-sky-500 w-44">
+            </div>
+          </div>
+          <div id="online-status-badge" class="text-xs font-bold px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+            未接続
+          </div>
+        </div>
+
+        <div id="online-debug-info" class="text-[11px] text-slate-400 bg-slate-950/60 border border-slate-800/80 rounded-lg px-3 py-2 flex flex-wrap items-center justify-between gap-2">
+          <span id="online-detail-text">部屋番号（例: 4829）を決めて「部屋を作成」を押すか、番号を入力して「部屋に参加」を押してください。</span>
+          <span id="online-role-text" class="font-mono text-sky-300"></span>
+        </div>
+
+        <!-- 部屋作成 / 部屋参加コントロール（未接続時） -->
+        <div id="online-connect-controls" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-3.5 space-y-2.5">
+            <div class="text-sm font-bold text-sky-300">🏠 部屋を作る（ホスト）</div>
+            <p class="text-xs text-slate-400">下のカスタムルールを適用した部屋を作成し、友達に部屋番号を共有します。</p>
+            <div class="flex items-center gap-2">
+              <input id="host-room-code" type="text" maxlength="10" value="" placeholder="部屋番号 (例: 4829)" class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm font-mono font-bold tracking-wider text-white uppercase focus:outline-none focus:ring-2 focus:ring-sky-500">
+              <button id="btn-random-code" type="button" class="shrink-0 px-2.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-bold text-slate-200 transition" title="ランダムな番号を生成">🎲</button>
+              <button id="btn-create-room" type="button" class="shrink-0 px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-xs font-bold text-white transition">
+                部屋を作成
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-3.5 space-y-2.5">
+            <div class="text-sm font-bold text-emerald-300">🚪 部屋に入る（ゲスト）</div>
+            <p class="text-xs text-slate-400">ホストから聞いた部屋番号を入力して参加します（最大10人）。</p>
+            <div class="flex items-center gap-2">
+              <input id="join-room-code" type="text" maxlength="10" placeholder="部屋番号を入力" class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm font-mono font-bold tracking-wider text-white uppercase focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <button id="btn-join-room" type="button" class="shrink-0 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white transition">
+                部屋に参加
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 接続中ロビー -->
+        <div id="online-lobby-box" class="hidden space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs text-slate-400">部屋番号:</span>
+              <span id="lobby-room-code-display" class="text-base font-mono font-extrabold text-amber-300 tracking-widest">----</span>
+              <button id="btn-copy-room-code" type="button" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] font-semibold text-slate-200 transition">番号コピー</button>
+              <button id="btn-copy-invite-link" type="button" class="px-2.5 py-1 rounded bg-sky-600/30 hover:bg-sky-600/50 border border-sky-400/40 text-[11px] font-bold text-sky-200 transition">🔗 招待リンクコピー</button>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="btn-lobby-add-ai" type="button" class="hidden px-3 py-1.5 rounded-lg bg-purple-600/30 hover:bg-purple-600/50 border border-purple-400/40 text-xs font-bold text-purple-200 transition">
+                🤖 AIボットを追加
+              </button>
+              <button id="btn-leave-room" type="button" class="px-3 py-1.5 rounded-lg bg-rose-600/20 hover:bg-rose-600/40 border border-rose-500/40 text-xs font-bold text-rose-300 transition">
+                退出する
+              </button>
+            </div>
+          </div>
+
+          <div id="online-lobby-players" class="grid grid-cols-2 sm:grid-cols-5 gap-2"></div>
+          <p id="online-guest-wait-msg" class="hidden text-xs text-center text-sky-300 font-semibold py-2">
+            ホストが対戦を開始するのを待っています...
+          </p>
+        </div>
+      </div>
+
+      <!-- ルール・人数設定バー -->
+      <div id="rules-config-bar" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-5 p-3.5 rounded-xl bg-slate-950/60 border border-slate-800">
+        <div id="local-count-wrapper">
+          <label for="player-count-select" class="block text-xs font-semibold text-slate-400 mb-1">プレイヤー人数 (1〜10人)</label>
+          <div class="flex items-center gap-1.5">
+            <button id="btn-count-minus" type="button" class="px-2.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-sm font-bold text-white transition" title="人数を減らす">−</button>
+            <select id="player-count-select" class="w-full rounded-lg bg-slate-800 border border-slate-700 px-2.5 py-2 text-sm text-center font-bold text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+              <option value="1">1人（ソロ）</option>
+              <option value="2">2人</option>
+              <option value="3">3人</option>
+              <option value="4">4人</option>
+              <option value="5">5人</option>
+              <option value="6">6人</option>
+              <option value="7">7人</option>
+              <option value="8">8人</option>
+              <option value="9">9人</option>
+              <option value="10" selected="">10人</option>
+            </select>
+            <button id="btn-count-plus" type="button" class="px-2.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-sm font-bold text-white transition" title="人数を増やす">＋</button>
+          </div>
+        </div>
+
+        <div>
+          <label for="roll-speed-select" class="block text-xs font-semibold text-slate-400 mb-1">サイコロ速度</label>
+          <select id="roll-speed-select" class="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+            <option value="fast">高速（サクサク）</option>
+            <option value="normal" selected="">標準</option>
+            <option value="slow">じっくり</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="rolls-per-turn-input" class="block text-xs font-semibold text-slate-400 mb-1">1ターンのロール回数 (1〜10)</label>
+          <div class="flex items-center gap-2">
+            <input id="rolls-per-turn-range" type="range" min="1" max="10" value="3" class="w-full accent-sky-400 cursor-pointer">
+            <input id="rolls-per-turn-input" type="number" min="1" max="10" value="3" class="w-16 shrink-0 rounded-lg bg-slate-800 border border-slate-700 px-2 py-1.5 text-sm text-center font-bold text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="carry-over-select" class="block text-xs font-semibold text-slate-400 mb-1">持ち越しロール</label>
+          <div class="flex items-center gap-2">
+            <select id="carry-over-select" class="w-full rounded-lg bg-slate-800 border border-slate-700 px-2.5 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+              <option value="none" selected="">なし</option>
+              <option value="capped">上限あり</option>
+              <option value="unlimited">無制限</option>
+            </select>
+            <input id="carry-over-cap-input" type="number" min="1" max="10" value="3" title="持ち越し上限回数" class="hidden w-16 shrink-0 rounded-lg bg-slate-800 border border-slate-700 px-2 py-1.5 text-sm text-center font-bold text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="bonus-threshold-input" class="block text-xs font-semibold text-slate-400 mb-1">上段ボーナス条件 (0〜105点)</label>
+          <div class="flex items-center gap-2">
+            <input id="bonus-threshold-range" type="range" min="0" max="105" value="63" class="w-full accent-sky-400 cursor-pointer">
+            <input id="bonus-threshold-input" type="number" min="0" max="105" value="63" class="w-16 shrink-0 rounded-lg bg-slate-800 border border-slate-700 px-2 py-1.5 text-sm text-center font-bold text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="upper-bonus-points-input" class="block text-xs font-semibold text-slate-400 mb-1">上段ボーナス点数 (0〜250点)</label>
+          <div class="flex items-center gap-2">
+            <input id="upper-bonus-points-range" type="range" min="0" max="250" value="35" class="w-full accent-emerald-400 cursor-pointer">
+            <input id="upper-bonus-points-input" type="number" min="0" max="250" value="35" class="w-16 shrink-0 rounded-lg bg-slate-800 border border-slate-700 px-2 py-1.5 text-sm text-center font-bold text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="multi-yacht-input" class="block text-xs font-semibold text-slate-400 mb-1">2回目以降のヨットボーナス (0〜250点)</label>
+          <div class="flex items-center gap-2">
+            <input id="multi-yacht-range" type="range" min="0" max="250" value="100" class="w-full accent-amber-400 cursor-pointer">
+            <input id="multi-yacht-input" type="number" min="0" max="250" value="100" class="w-20 shrink-0 rounded-lg bg-slate-800 border border-slate-700 px-2 py-1.5 text-sm text-center font-bold text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="joker-rule-select" class="block text-xs font-semibold text-slate-400 mb-1">ヨットジョーカー（2回目以降の代用）</label>
+          <select id="joker-rule-select" class="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <option value="on" selected="">適用する（役は全有効・上段は出た目のみ）</option>
+            <option value="off">適用しない（厳格判定）</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ローカル用プレイヤーリスト（アイコン編集ボタン付き） -->
+      <div id="setup-players-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5 mb-5"><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#0284c7; border: 2px solid #38bdf8;">🎲</span><span>#1</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#059669; border: 2px solid #38bdf8;">👑</span><span>#2</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#d97706; border: 2px solid #38bdf8;">🐱</span><span>#3</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#db2777; border: 2px solid #38bdf8;">🐶</span><span>#4</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#7c3aed; border: 2px solid #38bdf8;">🦊</span><span>#5</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#e11d48; border: 2px solid #38bdf8;">🐼</span><span>#6</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#0d9488; border: 2px solid #38bdf8;">🐸</span><span>#7</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#ca8a04; border: 2px solid #38bdf8;">🦁</span><span>#8</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#2563eb; border: 2px solid #38bdf8;">🚀</span><span>#9</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div><div class="bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2"><div class="flex items-center justify-between gap-2"><button type="button" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition" title="アイコンを編集"><span class="w-7 h-7 text-sm rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:#9333ea; border: 2px solid #38bdf8;">💎</span><span>#10</span></button><button type="button" class="px-2 py-0.5 rounded-md text-[11px] font-bold transition bg-sky-500/20 text-sky-300 border border-sky-400/40">👤 人間</button></div><input type="text" maxlength="12" class="w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></div></div>
+
+      <div class="flex flex-wrap items-center justify-end gap-3">
+        <button id="btn-cancel-setup" type="button" class="hidden px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-sm font-semibold text-slate-200 transition">
+          ゲームに戻る
+        </button>
+        <button id="btn-start-game" type="button" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-sm font-bold text-white shadow-lg shadow-sky-500/25 transition">
+          🎲 このメンバーで対戦開始
+        </button>
+      </div>
+    </section>
+
+    <!-- メインゲーム画面 -->
+    <main id="game-screen" class="hidden space-y-4">
+      <!-- 10人プレイヤー状況バー -->
+      <div class="bg-slate-900/75 border border-slate-800 rounded-2xl p-3">
+        <div class="flex items-center justify-between mb-2 px-1">
+          <div class="text-xs font-semibold text-slate-400">
+            ラウンド <span id="round-indicator" class="text-white font-bold">1</span> / 13
+          </div>
+          <div id="turn-banner" class="text-xs sm:text-sm font-bold text-sky-300 flex items-center gap-1.5"></div>
+        </div>
+        <div id="players-strip" class="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-1.5"></div>
+      </div>
+
+      <!-- サイコロ＆操作エリア -->
+      <section class="bg-slate-900/85 border border-slate-800 rounded-2xl p-4 sm:p-5 shadow-xl">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
+          <div class="flex flex-col items-center gap-3 w-full lg:w-auto">
+            <div id="dice-container" class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3.5"></div>
+            <p id="dice-hint" class="text-xs text-slate-400 text-center">
+              「サイコロを振る」を押してスタート（出た目をクリックでホールド / キー 1〜5・Space 対応）
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center lg:items-end gap-2.5 w-full lg:w-auto">
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400">残りロール:</span>
+              <div id="rolls-dots" class="flex items-center gap-1.5"></div>
+            </div>
+            <button id="btn-roll" type="button" class="w-full sm:w-64 py-3.5 px-6 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 disabled:from-slate-700 disabled:to-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed text-base font-extrabold text-white shadow-lg shadow-emerald-500/20 transition transform active:scale-95">
+              🎲 サイコロを振る
+            </button>
+            <div id="hand-announcement" class="min-h-[22px] text-xs font-bold text-amber-300"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- スコアカード -->
+      <section class="bg-slate-900/85 border border-slate-800 rounded-2xl shadow-xl overflow-hidden">
+        <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-3 border-b border-slate-800 bg-slate-900">
+          <h2 class="text-sm font-bold text-white flex items-center gap-2">
+            📋 スコアカード
+            <span id="scorecard-subtitle" class="text-xs font-normal text-slate-400">（現在の手番プレイヤーの緑色セルをクリックして確定）</span>
+          </h2>
+          <div class="flex items-center gap-2">
+            <button id="btn-show-ranking" type="button" class="hidden px-3 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-xs font-bold text-amber-300 transition">
+              🏆 結果ランキングを見る
+            </button>
+            <span class="text-xs text-slate-400 hidden sm:inline">横スクロールで全員のスコアを確認できます</span>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto custom-scroll">
+          <table class="w-full text-xs sm:text-sm border-collapse min-w-[680px]">
+            <thead id="score-thead" class="bg-slate-950/90 text-slate-300"></thead>
+            <tbody id="score-tbody" class="divide-y divide-slate-800/80"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- トースト通知 -->
+    <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 px-4 py-2.5 rounded-xl bg-slate-800 border border-sky-400/50 text-sm font-bold text-white shadow-2xl"></div>
+
+    <!-- カスタムアイコンメーカー モーダル -->
+    <div id="icon-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-5 shadow-2xl space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-base font-bold text-white">🎨 アイコンを作る</h3>
+          <button id="btn-close-icon-modal" type="button" class="text-slate-400 hover:text-white text-xl font-bold px-2">×</button>
+        </div>
+
+        <div class="flex items-center gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+          <button id="icon-tab-stamp" type="button" class="flex-1 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white transition">スタンプ＆色</button>
+          <button id="icon-tab-draw" type="button" class="flex-1 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">✏️ 手描きお絵描き</button>
+        </div>
+
+        <!-- スタンプモード -->
+        <div id="icon-panel-stamp" class="space-y-3">
+          <div class="flex items-center justify-center py-2">
+            <div id="icon-stamp-preview" class="w-20 h-20 rounded-2xl flex items-center justify-center text-4xl shadow-xl border-4 transition">🎲</div>
+          </div>
+
+          <div>
+            <div class="text-xs font-semibold text-slate-400 mb-1.5">スタンプを選ぶ（または文字1〜2文字を入力）</div>
+            <div id="icon-emoji-list" class="flex flex-wrap gap-1.5 mb-2"><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🎲</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">👑</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🐱</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🐶</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🦊</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🐼</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🐸</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🦁</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🐙</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🚀</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">⚡</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🔥</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">💎</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🎯</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🍀</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🌟</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">👻</button><button type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition">🤖</button></div>
+            <input id="icon-custom-text" type="text" maxlength="2" placeholder="好きな文字もOK (例: A)" class="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-1.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <div class="text-xs font-semibold text-slate-400 mb-1">背景色</div>
+              <input id="icon-bg-color" type="color" value="#0284c7" class="w-full h-9 rounded-lg bg-slate-800 border border-slate-700 cursor-pointer">
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-400 mb-1">枠カラー</div>
+              <input id="icon-border-color" type="color" value="#38bdf8" class="w-full h-9 rounded-lg bg-slate-800 border border-slate-700 cursor-pointer">
+            </div>
+          </div>
+        </div>
+
+        <!-- お絵描きモード -->
+        <div id="icon-panel-draw" class="hidden space-y-3">
+          <div class="flex flex-col items-center gap-2">
+            <canvas id="icon-draw-canvas" width="160" height="160" class="rounded-2xl border-2 border-sky-400 bg-slate-950 cursor-crosshair touch-none shadow-lg"></canvas>
+            <div class="flex flex-wrap items-center justify-center gap-2 w-full">
+              <input id="draw-pen-color" type="color" value="#38bdf8" class="w-9 h-8 rounded bg-slate-800 border border-slate-700 cursor-pointer" title="ペンの色">
+              <select id="draw-pen-size" class="rounded-lg bg-slate-800 border border-slate-700 px-2 py-1 text-xs text-white">
+                <option value="4">細</option>
+                <option value="8" selected="">中</option>
+                <option value="14">太</option>
+              </select>
+              <button id="btn-draw-fill" type="button" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 border border-slate-700">背景塗り</button>
+              <button id="btn-draw-clear" type="button" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-rose-300 border border-slate-700">クリア</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-end gap-2 pt-2 border-t border-slate-800">
+          <button id="btn-save-icon" type="button" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-sm font-bold text-white transition">
+            このアイコンに決定
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ルール説明モーダル -->
+    <div id="rules-modal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-xl w-full max-h-[85vh] overflow-y-auto p-5 sm:p-6 shadow-2xl">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-bold text-white">ヨット（ヤッツィー形式）のルール</h3>
+          <button id="btn-close-rules" type="button" class="text-slate-400 hover:text-white text-xl font-bold px-2">×</button>
+        </div>
+        <div class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p>各プレイヤーは1ターンに設定回数（標準3回、最大10回）まで5つのサイコロを振れます。途中で好きなサイコロを<strong>ホールド（固定）</strong>して残りを振り直せます。</p>
+          <div class="bg-slate-950/70 rounded-xl p-3 border border-slate-800 space-y-1.5">
+            <div class="font-bold text-sky-300">上段（1〜6の目）</div>
+            <p>該当する目の合計点が入ります。上段6項目の合計が設定したしきい値以上になると設定した<strong>上段ボーナス点数</strong>が加算されます！</p>
+          </div>
+          <div class="bg-slate-950/70 rounded-xl p-3 border border-slate-800 space-y-1.5">
+            <div class="font-bold text-emerald-300">下段（役）</div>
+            <ul class="list-disc pl-5 space-y-1">
+              <li><strong>スリーカード</strong>：同じ目3つ以上 → 全ダイス合計</li>
+              <li><strong>フォーカード</strong>：同じ目4つ以上 → 全ダイス合計</li>
+              <li><strong>フルハウス</strong>：3つ同じ＋2つ同じ → <strong>25点</strong></li>
+              <li><strong>小ストレート</strong>：4つ連続の目 → <strong>30点</strong></li>
+              <li><strong>大ストレート</strong>：5つ連続の目 → <strong>40点</strong></li>
+              <li><strong>ヨット（ヤッツィー）</strong>：5つすべて同じ目 → <strong>1:70点 / 2:65点 / 3:60点 / 4:55点 / 5・6:50点</strong></li>
+              <li><strong>チャンス</strong>：どんな目でもOK → 全ダイス合計</li>
+            </ul>
+          </div>
+          <p>すでにヨットを獲得している状態で再度ヨットを出すと、<strong>その出目のヨット基本点（50〜70点）＋設定したヨットボーナス</strong>が加算されます。さらに「ヨットジョーカー」が有効な場合、2回目以降のヨットは下段の役（フルハウス・小ストレート・大ストレート）を代用として埋められます（上段の1〜6の目は、実際に出た目に対応するマスのみ通常通り5個分の点数が入ります）。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 結果表彰モーダル -->
+    <div id="gameover-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-7 shadow-2xl">
+        <div class="text-center mb-5">
+          <div class="text-4xl mb-2">🏆</div>
+          <h2 class="text-2xl font-extrabold text-white">ゲーム終了！最終結果</h2>
+          <p id="winner-subtitle" class="text-sm text-amber-300 font-bold mt-1"></p>
+        </div>
+        <div id="ranking-list" class="space-y-2 mb-6"></div>
+        <div class="flex flex-wrap justify-center gap-3">
+          <button id="btn-view-scorecard" type="button" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-sm font-bold text-white transition">
+            📋 得点表を見る
+          </button>
+          <button id="btn-rematch" type="button" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-sm font-bold text-white transition">
+            🔄 同じメンバーでもう一度
+          </button>
+          <button id="btn-back-to-setup" type="button" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-sm font-semibold text-slate-200 transition">
+            ⚙️ メンバー設定へ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==========================================
+    // 定数 & カテゴリー定義
+    // ==========================================
+    const PLAYER_COLORS = [
+      '#0284c7', '#059669', '#d97706', '#db2777', '#7c3aed',
+      '#e11d48', '#0d9488', '#ca8a04', '#2563eb', '#9333ea'
+    ];
+    const DEFAULT_EMOJIS = ['🎲', '👑', '🐱', '🐶', '🦊', '🐼', '🐸', '🦁', '🚀', '💎'];
+    const ICON_EMOJIS = ['🎲', '👑', '🐱', '🐶', '🦊', '🐼', '🐸', '🦁', '🐙', '🚀', '⚡', '🔥', '💎', '🎯', '🍀', '🌟', '👻', '🤖'];
+
+    const CATEGORIES = [
+      { id: 'ones',    name: '1の目',         section: 'upper', desc: '1の合計' },
+      { id: 'twos',    name: '2の目',         section: 'upper', desc: '2の合計' },
+      { id: 'threes',  name: '3の目',         section: 'upper', desc: '3の合計' },
+      { id: 'fours',   name: '4の目',         section: 'upper', desc: '4の合計' },
+      { id: 'fives',   name: '5の目',         section: 'upper', desc: '5の合計' },
+      { id: 'sixes',   name: '6の目',         section: 'upper', desc: '6の合計' },
+      { id: 'threeK',  name: 'スリーカード',   section: 'lower', desc: '同じ目3つ以上・合計' },
+      { id: 'fourK',   name: 'フォーカード',   section: 'lower', desc: '同じ目4つ以上・合計' },
+      { id: 'fullH',   name: 'フルハウス',     section: 'lower', desc: '3つ+2つ・25点' },
+      { id: 'smStr',   name: '小ストレート',   section: 'lower', desc: '4連続・30点' },
+      { id: 'lgStr',   name: '大ストレート',   section: 'lower', desc: '5連続・40点' },
+      { id: 'yacht',   name: 'ヨット',         section: 'lower', desc: '1:70/2:65/3:60/4:55/5・6:50' },
+      { id: 'chance',  name: 'チャンス',       section: 'lower', desc: '出目の合計' }
+    ];
+
+    const PIP_MAP = {
+      1: [4],
+      2: [2, 6],
+      3: [2, 4, 6],
+      4: [0, 2, 6, 8],
+      5: [0, 2, 4, 6, 8],
+      6: [0, 2, 3, 5, 6, 8]
+    };
+
+    // ==========================================
+    // サウンドエンジン (Web Audio API)
+    // ==========================================
+    const Sound = {
+      ctx: null,
+      muted: false,
+      ensureCtx() {
+        if (!this.ctx) {
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (AudioCtx) this.ctx = new AudioCtx();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume().catch(() => {});
+        }
+      },
+      tone(freq, dur, type = 'sine', vol = 0.08, delay = 0) {
+        if (this.muted) return;
+        this.ensureCtx();
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime + delay;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, now);
+        gain.gain.setValueAtTime(vol, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + dur);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now);
+        osc.stop(now + dur);
+      },
+      roll() {
+        for (let i = 0; i < 4; i++) {
+          this.tone(180 + Math.random() * 140, 0.05, 'triangle', 0.06, i * 0.055);
+        }
+      },
+      hold() { this.tone(520, 0.06, 'sine', 0.06); },
+      score() {
+        this.tone(440, 0.08, 'sine', 0.07, 0);
+        this.tone(660, 0.14, 'sine', 0.08, 0.07);
+      },
+      yacht() {
+        [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+          this.tone(f, 0.22, 'triangle', 0.1, i * 0.08);
+        });
+      },
+      win() {
+        [523.25, 659.25, 783.99, 1046.5, 1318.5].forEach((f, i) => {
+          this.tone(f, 0.25, 'sine', 0.1, i * 0.1);
+        });
+      }
+    };
+
+    // ==========================================
+    // カスタムアイコン ヘルパー
+    // ==========================================
+    function makeDefaultIcon(i) {
+      return {
+        type: 'stamp',
+        text: DEFAULT_EMOJIS[i % DEFAULT_EMOJIS.length],
+        bg: PLAYER_COLORS[i % PLAYER_COLORS.length],
+        border: '#38bdf8',
+        dataUrl: ''
+      };
+    }
+
+    function renderAvatarHtml(icon, sizeClass = 'w-6 h-6 text-xs') {
+      if (!icon) icon = makeDefaultIcon(0);
+      if (icon.type === 'draw' && icon.dataUrl) {
+        return `<img src="${icon.dataUrl}" alt="icon" class="${sizeClass} rounded-lg object-cover shrink-0 border border-slate-600" />`;
+      }
+      const bg = icon.bg || '#0284c7';
+      const border = icon.border || '#38bdf8';
+      const txt = escapeHtml(icon.text || '🎲');
+      return `<span class="${sizeClass} rounded-lg inline-flex items-center justify-center shrink-0 font-bold select-none" style="background:${bg}; border: 2px solid ${border};">${txt}</span>`;
+    }
+
+    // ==========================================
+    // アプリ状態
+    // ==========================================
+    const state = {
+      playMode: 'local',
+      inGame: false,
+      setupPlayers: Array.from({ length: 10 }, (_, i) => ({
+        name: `プレイヤー${i + 1}`,
+        isAI: false,
+        icon: makeDefaultIcon(i)
+      })),
+      playerCount: 10,
+      rollSpeed: 'normal',
+      rollsPerTurn: 3,
+      carryOverMode: 'none',
+      carryOverCap: 3,
+      bonusThreshold: 63,
+      upperBonusPoints: 35,
+      multiYachtBonus: 100,
+      jokerEnabled: true,
+
+      players: [],
+      currentPlayerIndex: 0,
+      round: 1,
+      dice: [1, 2, 3, 4, 5],
+      held: [false, false, false, false, false],
+      rollsLeft: 3,
+      turnMaxRolls: 3,
+      hasRolledThisTurn: false,
+      isRolling: false,
+      aiTimer: null,
+      rollTimer: null,
+      gameOver: false,
+
+      online: {
+        role: null,
+        transport: 'peer', // 'peer' | 'localbus'
+        roomCode: '',
+        peer: null,
+        bc: null,
+        storageHandler: null,
+        hostConn: null,
+        guestConns: {},
+        myPeerId: '',
+        myName: 'プレイヤー',
+        myIcon: makeDefaultIcon(0),
+        lobbyPlayers: []
+      }
+    };
+
+    // ==========================================
+    // DOM要素キャッシュ
+    // ==========================================
+    const els = {
+      modeBadge: document.getElementById('mode-badge'),
+      btnCopyDataUrl: document.getElementById('btn-copy-data-url'),
+      btnDownloadHtml: document.getElementById('btn-download-html'),
+      setupScreen: document.getElementById('setup-screen'),
+      gameScreen: document.getElementById('game-screen'),
+      tabLocalMode: document.getElementById('tab-local-mode'),
+      tabOnlineMode: document.getElementById('tab-online-mode'),
+      localPresets: document.getElementById('local-presets'),
+      onlinePanel: document.getElementById('online-panel'),
+      localCountWrapper: document.getElementById('local-count-wrapper'),
+      rulesConfigBar: document.getElementById('rules-config-bar'),
+      setupPlayersGrid: document.getElementById('setup-players-grid'),
+
+      btnEditMyIcon: document.getElementById('btn-edit-my-icon'),
+      myOnlineAvatar: document.getElementById('my-online-avatar'),
+      myOnlineName: document.getElementById('my-online-name'),
+      onlineStatusBadge: document.getElementById('online-status-badge'),
+      onlineConnectControls: document.getElementById('online-connect-controls'),
+      hostRoomCode: document.getElementById('host-room-code'),
+      btnCreateRoom: document.getElementById('btn-create-room'),
+      joinRoomCode: document.getElementById('join-room-code'),
+      btnJoinRoom: document.getElementById('btn-join-room'),
+      onlineLobbyBox: document.getElementById('online-lobby-box'),
+      lobbyRoomCodeDisplay: document.getElementById('lobby-room-code-display'),
+      btnCopyRoomCode: document.getElementById('btn-copy-room-code'),
+      btnCopyInviteLink: document.getElementById('btn-copy-invite-link'),
+      btnLobbyAddAi: document.getElementById('btn-lobby-add-ai'),
+      btnLeaveRoom: document.getElementById('btn-leave-room'),
+      onlineLobbyPlayers: document.getElementById('online-lobby-players'),
+      onlineGuestWaitMsg: document.getElementById('online-guest-wait-msg'),
+
+      playerCountSelect: document.getElementById('player-count-select'),
+      btnCountMinus: document.getElementById('btn-count-minus'),
+      btnCountPlus: document.getElementById('btn-count-plus'),
+      rollSpeedSelect: document.getElementById('roll-speed-select'),
+      rollsPerTurnRange: document.getElementById('rolls-per-turn-range'),
+      rollsPerTurnInput: document.getElementById('rolls-per-turn-input'),
+      carryOverSelect: document.getElementById('carry-over-select'),
+      carryOverCapInput: document.getElementById('carry-over-cap-input'),
+      bonusThresholdRange: document.getElementById('bonus-threshold-range'),
+      bonusThresholdInput: document.getElementById('bonus-threshold-input'),
+      upperBonusPointsRange: document.getElementById('upper-bonus-points-range'),
+      upperBonusPointsInput: document.getElementById('upper-bonus-points-input'),
+      multiYachtRange: document.getElementById('multi-yacht-range'),
+      multiYachtInput: document.getElementById('multi-yacht-input'),
+      jokerRuleSelect: document.getElementById('joker-rule-select'),
+
+      btnStartGame: document.getElementById('btn-start-game'),
+      btnCancelSetup: document.getElementById('btn-cancel-setup'),
+      btnOpenSetup: document.getElementById('btn-open-setup'),
+      btnPreset10Humans: document.getElementById('btn-preset-10-humans'),
+      btnPreset1v9: document.getElementById('btn-preset-1v9'),
+      btnSound: document.getElementById('btn-sound'),
+      soundIcon: document.getElementById('sound-icon'),
+      soundLabel: document.getElementById('sound-label'),
+      btnRules: document.getElementById('btn-rules'),
+      rulesModal: document.getElementById('rules-modal'),
+      btnCloseRules: document.getElementById('btn-close-rules'),
+
+      roundIndicator: document.getElementById('round-indicator'),
+      turnBanner: document.getElementById('turn-banner'),
+      playersStrip: document.getElementById('players-strip'),
+      diceContainer: document.getElementById('dice-container'),
+      diceHint: document.getElementById('dice-hint'),
+      rollsDots: document.getElementById('rolls-dots'),
+      btnRoll: document.getElementById('btn-roll'),
+      handAnnouncement: document.getElementById('hand-announcement'),
+      scoreThead: document.getElementById('score-thead'),
+      scoreTbody: document.getElementById('score-tbody'),
+      toast: document.getElementById('toast'),
+
+      gameoverModal: document.getElementById('gameover-modal'),
+      winnerSubtitle: document.getElementById('winner-subtitle'),
+      rankingList: document.getElementById('ranking-list'),
+      btnViewScorecard: document.getElementById('btn-view-scorecard'),
+      btnShowRanking: document.getElementById('btn-show-ranking'),
+      scorecardSubtitle: document.getElementById('scorecard-subtitle'),
+      btnRematch: document.getElementById('btn-rematch'),
+      btnBackToSetup: document.getElementById('btn-back-to-setup'),
+
+      iconModal: document.getElementById('icon-modal'),
+      btnCloseIconModal: document.getElementById('btn-close-icon-modal'),
+      iconTabStamp: document.getElementById('icon-tab-stamp'),
+      iconTabDraw: document.getElementById('icon-tab-draw'),
+      iconPanelStamp: document.getElementById('icon-panel-stamp'),
+      iconPanelDraw: document.getElementById('icon-panel-draw'),
+      iconStampPreview: document.getElementById('icon-stamp-preview'),
+      iconEmojiList: document.getElementById('icon-emoji-list'),
+      iconCustomText: document.getElementById('icon-custom-text'),
+      iconBgColor: document.getElementById('icon-bg-color'),
+      iconBorderColor: document.getElementById('icon-border-color'),
+      iconDrawCanvas: document.getElementById('icon-draw-canvas'),
+      drawPenColor: document.getElementById('draw-pen-color'),
+      drawPenSize: document.getElementById('draw-pen-size'),
+      btnDrawFill: document.getElementById('btn-draw-fill'),
+      btnDrawClear: document.getElementById('btn-draw-clear'),
+      btnSaveIcon: document.getElementById('btn-save-icon')
+    };
+
+    // ==========================================
+    // スコア計算・AIロジック
+    // ==========================================
+    function getCounts(dice) {
+      const c = [0, 0, 0, 0, 0, 0, 0];
+      for (const d of dice) c[d]++;
+      return c;
+    }
+
+    function isYachtDice(dice) {
+      return dice.every((d) => d === dice[0]);
+    }
+
+    function getYachtBaseScore(face) {
+      const table = { 1: 70, 2: 65, 3: 60, 4: 55, 5: 50, 6: 50 };
+      return table[face] || 50;
+    }
+
+    function calcCategoryScore(catId, dice, playerScores) {
+      const counts = getCounts(dice);
+      const sum = dice.reduce((a, b) => a + b, 0);
+      const isYacht = isYachtDice(dice);
+      const jokerActive = state.jokerEnabled && isYacht && playerScores && playerScores.yacht > 0;
+
+      switch (catId) {
+        case 'ones': return counts[1] * 1;
+        case 'twos': return counts[2] * 2;
+        case 'threes': return counts[3] * 3;
+        case 'fours': return counts[4] * 4;
+        case 'fives': return counts[5] * 5;
+        case 'sixes': return counts[6] * 6;
+        case 'threeK': return counts.some((c) => c >= 3) ? sum : 0;
+        case 'fourK': return counts.some((c) => c >= 4) ? sum : 0;
+        case 'fullH': {
+          if (jokerActive) return 25;
+          const has3 = counts.some((c) => c === 3);
+          const has2 = counts.some((c) => c === 2);
+          return has3 && has2 ? 25 : 0;
+        }
+        case 'smStr': {
+          if (jokerActive) return 30;
+          const uniq = new Set(dice);
+          return [[1,2,3,4],[2,3,4,5],[3,4,5,6]].some((s) => s.every((n) => uniq.has(n))) ? 30 : 0;
+        }
+        case 'lgStr': {
+          if (jokerActive) return 40;
+          const uniq = new Set(dice);
+          return [[1,2,3,4,5],[2,3,4,5,6]].some((s) => s.every((n) => uniq.has(n))) ? 40 : 0;
+        }
+        case 'yacht': return isYacht ? getYachtBaseScore(dice[0]) : 0;
+        case 'chance': return sum;
+        default: return 0;
+      }
+    }
+
+    function getPlayerTotals(player) {
+      const upperIds = ['ones', 'twos', 'threes', 'fours', 'fives', 'sixes'];
+      const lowerIds = ['threeK', 'fourK', 'fullH', 'smStr', 'lgStr', 'yacht', 'chance'];
+      let upperSum = 0;
+      for (const id of upperIds) {
+        if (player.scores[id] !== null) upperSum += player.scores[id];
+      }
+      const upperBonus = upperSum >= state.bonusThreshold ? state.upperBonusPoints : 0;
+      let lowerSum = 0;
+      for (const id of lowerIds) {
+        if (player.scores[id] !== null) lowerSum += player.scores[id];
+      }
+      const yachtBonus = player.yachtBonusTotal || 0;
+      const total = upperSum + upperBonus + lowerSum + yachtBonus;
+      return { upperSum, upperBonus, lowerSum, yachtBonus, total };
+    }
+
+    function aiChooseHolds(dice, scores) {
+      const counts = getCounts(dice);
+      if (isYachtDice(dice)) return [true, true, true, true, true];
+      const uniq = new Set(dice);
+      if (scores.lgStr === null && [[1,2,3,4,5],[2,3,4,5,6]].some(s => s.every(n => uniq.has(n)))) {
+        return [true, true, true, true, true];
+      }
+      if (scores.fullH === null && counts.some(c => c === 3) && counts.some(c => c === 2)) {
+        return [true, true, true, true, true];
+      }
+      let bestFace = 1, bestCount = 0;
+      for (let f = 1; f <= 6; f++) {
+        if (counts[f] > bestCount || (counts[f] === bestCount && f > bestFace)) {
+          bestCount = counts[f]; bestFace = f;
+        }
+      }
+      if (bestCount >= 2) return dice.map(d => d === bestFace);
+      return dice.map(d => d >= 5);
+    }
+
+    function aiChooseCategory(dice, scores) {
+      const available = CATEGORIES.filter(c => scores[c.id] === null);
+      let bestCat = available[0].id;
+      let bestWeight = -999;
+      for (const cat of available) {
+        const pts = calcCategoryScore(cat.id, dice, scores);
+        let weight = pts;
+        if (cat.id === 'yacht' && pts > 0) weight += 100;
+        if (cat.section === 'upper' && pts > 0) {
+          const face = ['ones','twos','threes','fours','fives','sixes'].indexOf(cat.id) + 1;
+          if (dice.filter(d => d === face).length >= 3) weight += 15;
+        }
+        if (cat.id === 'chance' && pts < 18) weight -= 12;
+        if (pts === 0) {
+          const sacrificeOrder = { ones: -1, twos: -2, yacht: -3, lgStr: -4, fourK: -5, threeK: -6 };
+          weight = sacrificeOrder[cat.id] ?? -10;
+        }
+        if (weight > bestWeight) { bestWeight = weight; bestCat = cat.id; }
+      }
+      return bestCat;
+    }
+
+    // ==========================================
+    // アイコンメーカー ロジック
+    // ==========================================
+    const iconEditor = {
+      target: null,
+      mode: 'stamp',
+      draft: makeDefaultIcon(0),
+      isDrawing: false
+    };
+
+    function openIconEditor(target) {
+      iconEditor.target = target;
+      const srcIcon = target === 'online' ? state.online.myIcon : state.setupPlayers[target].icon;
+      iconEditor.draft = JSON.parse(JSON.stringify(srcIcon || makeDefaultIcon(0)));
+
+      els.iconCustomText.value = iconEditor.draft.text || '🎲';
+      els.iconBgColor.value = iconEditor.draft.bg || '#0284c7';
+      els.iconBorderColor.value = iconEditor.draft.border || '#38bdf8';
+
+      const ctx = els.iconDrawCanvas.getContext('2d');
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(0, 0, 160, 160);
+      if (iconEditor.draft.type === 'draw' && iconEditor.draft.dataUrl) {
+        const img = new Image();
+        img.onload = () => ctx.drawImage(img, 0, 0, 160, 160);
+        img.src = iconEditor.draft.dataUrl;
+        setIconEditorTab('draw');
+      } else {
+        setIconEditorTab('stamp');
+      }
+      updateStampPreview();
+      els.iconModal.classList.remove('hidden');
+    }
+
+    function setIconEditorTab(tab) {
+      iconEditor.mode = tab;
+      if (tab === 'stamp') {
+        els.iconTabStamp.className = 'flex-1 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white transition';
+        els.iconTabDraw.className = 'flex-1 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
+        els.iconPanelStamp.classList.remove('hidden');
+        els.iconPanelDraw.classList.add('hidden');
+      } else {
+        els.iconTabDraw.className = 'flex-1 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white transition';
+        els.iconTabStamp.className = 'flex-1 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
+        els.iconPanelDraw.classList.remove('hidden');
+        els.iconPanelStamp.classList.add('hidden');
+      }
+    }
+
+    function updateStampPreview() {
+      els.iconStampPreview.textContent = els.iconCustomText.value || '🎲';
+      els.iconStampPreview.style.background = els.iconBgColor.value;
+      els.iconStampPreview.style.borderColor = els.iconBorderColor.value;
+    }
+
+    function initIconModal() {
+      els.iconEmojiList.innerHTML = '';
+      ICON_EMOJIS.forEach(em => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-base flex items-center justify-center transition';
+        b.textContent = em;
+        b.addEventListener('click', () => {
+          els.iconCustomText.value = em;
+          updateStampPreview();
+        });
+        els.iconEmojiList.appendChild(b);
+      });
+
+      els.iconTabStamp.addEventListener('click', () => setIconEditorTab('stamp'));
+      els.iconTabDraw.addEventListener('click', () => setIconEditorTab('draw'));
+      els.iconCustomText.addEventListener('input', updateStampPreview);
+      els.iconBgColor.addEventListener('input', updateStampPreview);
+      els.iconBorderColor.addEventListener('input', updateStampPreview);
+
+      const canvas = els.iconDrawCanvas;
+      const ctx = canvas.getContext('2d');
+      const getPos = (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return {
+          x: (clientX - rect.left) * (canvas.width / rect.width),
+          y: (clientY - rect.top) * (canvas.height / rect.height)
+        };
+      };
+      const startDraw = (e) => {
+        e.preventDefault();
+        iconEditor.isDrawing = true;
+        const p = getPos(e);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+      };
+      const moveDraw = (e) => {
+        if (!iconEditor.isDrawing) return;
+        e.preventDefault();
+        const p = getPos(e);
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.strokeStyle = els.drawPenColor.value;
+        ctx.lineWidth = parseInt(els.drawPenSize.value, 10);
+        ctx.lineTo(p.x, p.y);
+        ctx.stroke();
+      };
+      const endDraw = () => { iconEditor.isDrawing = false; };
+
+      canvas.addEventListener('mousedown', startDraw);
+      canvas.addEventListener('mousemove', moveDraw);
+      window.addEventListener('mouseup', endDraw);
+      canvas.addEventListener('touchstart', startDraw, { passive: false });
+      canvas.addEventListener('touchmove', moveDraw, { passive: false });
+      window.addEventListener('touchend', endDraw);
+
+      els.btnDrawClear.addEventListener('click', () => {
+        ctx.fillStyle = '#0f172a';
+        ctx.fillRect(0, 0, 160, 160);
+      });
+      els.btnDrawFill.addEventListener('click', () => {
+        ctx.fillStyle = els.drawPenColor.value;
+        ctx.fillRect(0, 0, 160, 160);
+      });
+
+      els.btnCloseIconModal.addEventListener('click', () => els.iconModal.classList.add('hidden'));
+      els.btnSaveIcon.addEventListener('click', () => {
+        let saved;
+        if (iconEditor.mode === 'draw') {
+          const small = document.createElement('canvas');
+          small.width = 64;
+          small.height = 64;
+          small.getContext('2d').drawImage(canvas, 0, 0, 64, 64);
+          saved = {
+            type: 'draw',
+            text: '',
+            bg: '#0f172a',
+            border: '#38bdf8',
+            dataUrl: small.toDataURL('image/png')
+          };
+        } else {
+          saved = {
+            type: 'stamp',
+            text: els.iconCustomText.value || '🎲',
+            bg: els.iconBgColor.value,
+            border: els.iconBorderColor.value,
+            dataUrl: ''
+          };
+        }
+
+        if (iconEditor.target === 'online') {
+          state.online.myIcon = saved;
+          renderMyOnlineAvatar();
+          if (state.online.role === 'host') {
+            const me = state.online.lobbyPlayers.find(p => p.peerId === state.online.myPeerId);
+            if (me) me.icon = saved;
+            broadcastLobby();
+          } else if (state.online.role === 'guest') {
+            sendToHost({ type: 'update_profile', name: els.myOnlineName.value.trim() || 'ゲスト', icon: saved });
+          }
+        } else {
+          state.setupPlayers[iconEditor.target].icon = saved;
+          renderSetupPlayers();
+        }
+        els.iconModal.classList.add('hidden');
+      });
+    }
+
+    function renderMyOnlineAvatar() {
+      els.myOnlineAvatar.innerHTML = '';
+      const icon = state.online.myIcon;
+      if (icon.type === 'draw' && icon.dataUrl) {
+        els.myOnlineAvatar.style.background = '#0f172a';
+        els.myOnlineAvatar.style.borderColor = '#38bdf8';
+        els.myOnlineAvatar.innerHTML = `<img src="${icon.dataUrl}" alt="my icon" class="w-full h-full object-cover" />`;
+      } else {
+        els.myOnlineAvatar.style.background = icon.bg;
+        els.myOnlineAvatar.style.borderColor = icon.border;
+        els.myOnlineAvatar.textContent = icon.text || '🎲';
+      }
+    }
+
+    // ==========================================
+    // オンライン対戦 (PeerJS + サンドボックス自動フォールバック)
+    // ==========================================
+    const ROOM_PREFIX = 'bloob10yacht-v2-';
+
+    function generateRoomCode() {
+      return String(Math.floor(1000 + Math.random() * 9000));
+    }
+
+    function setOnlineStatus(text, tone = 'neutral', detail = '') {
+      els.onlineStatusBadge.textContent = text;
+      const tones = {
+        neutral: 'bg-slate-800 text-slate-300 border-slate-700',
+        ok: 'bg-emerald-500/20 text-emerald-300 border-emerald-400/40',
+        wait: 'bg-amber-500/20 text-amber-300 border-amber-400/40',
+        err: 'bg-rose-500/20 text-rose-300 border-rose-400/40'
+      };
+      els.onlineStatusBadge.className = `text-xs font-bold px-3 py-1.5 rounded-full border ${tones[tone] || tones.neutral}`;
+      const detailEl = document.getElementById('online-detail-text');
+      const roleEl = document.getElementById('online-role-text');
+      if (detailEl && detail) detailEl.textContent = detail;
+      if (roleEl) {
+        roleEl.textContent = state.online.role
+          ? `役割: ${state.online.role === 'host' ? 'ホスト' : 'ゲスト'} / 部屋: ${state.online.roomCode || '-'}`
+          : '';
+      }
+    }
+
+    function leaveOnlineRoom() {
+      if (state.online.peer) {
+        try { state.online.peer.destroy(); } catch (_) {}
+      }
+      if (state.online.bc) {
+        try { state.online.bc.close(); } catch (_) {}
+      }
+      if (state.online.storageHandler) {
+        window.removeEventListener('storage', state.online.storageHandler);
+      }
+      state.online.peer = null;
+      state.online.bc = null;
+      state.online.storageHandler = null;
+      state.online.hostConn = null;
+      state.online.guestConns = {};
+      state.online.role = null;
+      state.online.transport = 'peer';
+      state.online.roomCode = '';
+      state.online.lobbyPlayers = [];
+      els.onlineConnectControls.classList.remove('hidden');
+      els.onlineLobbyBox.classList.add('hidden');
+      els.btnStartGame.classList.remove('hidden');
+      els.onlineGuestWaitMsg.classList.add('hidden');
+      setOnlineStatus('未接続', 'neutral');
+      updateModeUI();
+    }
+
+    function setupHostLobbyUI(code, isLocalBus) {
+      const id = 'host-' + Math.random().toString(36).slice(2, 8);
+      if (!state.online.myPeerId) state.online.myPeerId = id;
+      state.online.lobbyPlayers = [{
+        peerId: state.online.myPeerId,
+        name: state.online.myName,
+        isAI: false,
+        icon: state.online.myIcon,
+        color: PLAYER_COLORS[0]
+      }];
+      setOnlineStatus(isLocalBus ? `部屋 #${code} 待機中 (別タブ通信)` : `部屋 #${code} 待機中`, 'ok');
+      els.onlineConnectControls.classList.add('hidden');
+      els.onlineLobbyBox.classList.remove('hidden');
+      els.lobbyRoomCodeDisplay.textContent = code;
+      els.btnLobbyAddAi.classList.remove('hidden');
+      els.onlineGuestWaitMsg.classList.add('hidden');
+      els.btnStartGame.classList.remove('hidden');
+      renderOnlineLobby();
+    }
+
+    function startLocalBusHost(code) {
+      state.online.transport = 'localbus';
+      initLocalBus(code, (pkt) => {
+        if (!pkt || pkt.to !== 'host') return;
+        handleHostMessage(pkt.from, pkt.payload);
+      });
+      setupHostLobbyUI(code, true);
+      setOnlineStatus(`部屋 #${code} 待機中 (同一ブラウザ/タブ通信)`, 'ok', '同一ブラウザの別タブ・別ウィンドウと直接通信できます。外部端末からはPeerJS接続を使用します。');
+    }
+
+    function buildPeerConfig() {
+      return {
+        debug: 0,
+        config: {
+          iceServers: [
+            { urls: 'stun:stun.l.google.com:19302' },
+            { urls: 'stun:stun1.l.google.com:19302' },
+            { urls: 'stun:stun2.l.google.com:19302' },
+            { urls: 'stun:global.stun.twilio.com:3478' }
+          ]
+        }
+      };
+    }
+
+    function createOnlineRoom() {
+      if (state.online.peer) {
+        try { state.online.peer.destroy(); } catch (_) {}
+        state.online.peer = null;
+      }
+      const rawCode = (els.hostRoomCode.value || generateRoomCode()).trim().toUpperCase().replace(/[^A-Z0-9_-]/g, '');
+      const code = rawCode || generateRoomCode();
+      els.hostRoomCode.value = code;
+      setOnlineStatus('部屋を作成中...', 'wait', `部屋 #${code} の通信チャンネルを初期化しています...`);
+
+      state.online.role = 'host';
+      state.online.roomCode = code;
+      state.online.myName = els.myOnlineName.value.trim() || 'ホスト';
+
+      if (typeof Peer === 'undefined') {
+        startLocalBusHost(code);
+        return;
+      }
+
+      let settled = false;
+      const fallbackTimer = setTimeout(() => {
+        if (!settled && state.online.role === 'host' && !state.online.myPeerId) {
+          settled = true;
+          try { state.online.peer && state.online.peer.destroy(); } catch (_) {}
+          state.online.peer = null;
+          startLocalBusHost(code);
+        }
+      }, 4500);
+
+      try {
+        const peer = new Peer(ROOM_PREFIX + code, buildPeerConfig());
+        state.online.peer = peer;
+        state.online.transport = 'peer';
+
+        peer.on('open', (id) => {
+          settled = true;
+          clearTimeout(fallbackTimer);
+          state.online.myPeerId = id;
+          setupHostLobbyUI(code, false);
+          setOnlineStatus(`部屋 #${code} 待機中`, 'ok', `メンバーに部屋番号「${code}」または招待リンクを伝えて参加してもらってください。`);
+          showToast(`部屋 #${code} を作成しました！`);
+        });
+
+        peer.on('connection', (conn) => {
+          if (state.online.lobbyPlayers.length >= 10 || state.inGame) {
+            conn.on('open', () => {
+              conn.send({ type: 'error', message: '満員または対戦中のため参加できません' });
+              setTimeout(() => conn.close(), 300);
+            });
+            return;
+          }
+          state.online.guestConns[conn.peer] = conn;
+          conn.on('open', () => {
+            broadcastLobby();
+          });
+          conn.on('data', (msg) => handleHostMessage(conn.peer, msg));
+          conn.on('close', () => {
+            delete state.online.guestConns[conn.peer];
+            state.online.lobbyPlayers = state.online.lobbyPlayers.filter(p => p.peerId !== conn.peer);
+            if (!state.inGame) broadcastLobby();
+          });
+        });
+
+        peer.on('error', (err) => {
+          clearTimeout(fallbackTimer);
+          if (err && err.type === 'unavailable-id') {
+            settled = true;
+            setOnlineStatus('部屋番号が使用中', 'err', `部屋番号 #${code} はすでに使われています。別の番号を試してください。`);
+            showToast(`部屋番号 #${code} は使用中です。別の番号をお試しください`);
+            leaveOnlineRoom();
+          } else if (!settled) {
+            settled = true;
+            try { peer.destroy(); } catch (_) {}
+            state.online.peer = null;
+            startLocalBusHost(code);
+          } else {
+            showToast('通信エラーが発生しました。再試行してください');
+          }
+        });
+      } catch (_) {
+        clearTimeout(fallbackTimer);
+        startLocalBusHost(code);
+      }
+    }
+
+    function startLocalBusGuest(code) {
+      state.online.transport = 'localbus';
+      const guestId = 'guest-' + Math.random().toString(36).slice(2, 8);
+      state.online.myPeerId = guestId;
+      let joined = false;
+
+      initLocalBus(code, (pkt) => {
+        if (!pkt || pkt.to !== 'guests') return;
+        if (!joined) {
+          joined = true;
+          setOnlineStatus(`部屋 #${code} 参加中 (同一ブラウザ通信)`, 'ok', 'ホストと接続しました。対戦開始をお待ちください。');
+          els.onlineConnectControls.classList.add('hidden');
+          els.onlineLobbyBox.classList.remove('hidden');
+          els.lobbyRoomCodeDisplay.textContent = code;
+          els.btnLobbyAddAi.classList.add('hidden');
+          els.btnStartGame.classList.add('hidden');
+          els.onlineGuestWaitMsg.classList.remove('hidden');
+        }
+        handleGuestReceive(pkt.payload);
+      });
+
+      sendToHost({
+        type: 'join',
+        name: state.online.myName,
+        icon: state.online.myIcon
+      });
+
+      setTimeout(() => {
+        if (!joined && state.online.role === 'guest') {
+          setOnlineStatus('接続失敗', 'err', `部屋 #${code} が見つかりませんでした。部屋番号とホストの状態を確認してください。`);
+          showToast(`部屋 #${code} に接続できませんでした`);
+          leaveOnlineRoom();
+        }
+      }, 3000);
+    }
+
+    function joinOnlineRoom() {
+      if (state.online.peer) {
+        try { state.online.peer.destroy(); } catch (_) {}
+        state.online.peer = null;
+      }
+      const code = els.joinRoomCode.value.trim().toUpperCase().replace(/[^A-Z0-9_-]/g, '');
+      if (!code) { showToast('部屋番号を入力してください'); return; }
+      els.joinRoomCode.value = code;
+      setOnlineStatus('接続中...', 'wait', `部屋 #${code} へ接続しています...`);
+
+      state.online.role = 'guest';
+      state.online.roomCode = code;
+      state.online.myName = els.myOnlineName.value.trim() || 'ゲスト';
+
+      if (typeof Peer === 'undefined') {
+        startLocalBusGuest(code);
+        return;
+      }
+
+      let connected = false;
+      const connectTimeout = setTimeout(() => {
+        if (!connected && state.online.role === 'guest') {
+          try { state.online.peer && state.online.peer.destroy(); } catch (_) {}
+          state.online.peer = null;
+          startLocalBusGuest(code);
+        }
+      }, 4500);
+
+      try {
+        const peer = new Peer(buildPeerConfig());
+        state.online.peer = peer;
+        state.online.transport = 'peer';
+
+        peer.on('open', (id) => {
+          state.online.myPeerId = id;
+          const conn = peer.connect(ROOM_PREFIX + code, { reliable: true });
+          state.online.hostConn = conn;
+
+          conn.on('open', () => {
+            connected = true;
+            clearTimeout(connectTimeout);
+            setOnlineStatus(`部屋 #${code} 参加中`, 'ok', 'ホストに接続しました！対戦開始をお待ちください。');
+            els.onlineConnectControls.classList.add('hidden');
+            els.onlineLobbyBox.classList.remove('hidden');
+            els.lobbyRoomCodeDisplay.textContent = code;
+            els.btnLobbyAddAi.classList.add('hidden');
+            els.btnStartGame.classList.add('hidden');
+            els.onlineGuestWaitMsg.classList.remove('hidden');
+            conn.send({
+              type: 'join',
+              name: state.online.myName,
+              icon: state.online.myIcon
+            });
+            showToast(`部屋 #${code} に参加しました！`);
+          });
+
+          conn.on('data', (msg) => handleGuestReceive(msg));
+          conn.on('close', () => {
+            if (state.online.role === 'guest') {
+              showToast('ホストとの接続が切れました');
+              leaveOnlineRoom();
+            }
+          });
+          conn.on('error', () => {
+            if (!connected) {
+              clearTimeout(connectTimeout);
+              startLocalBusGuest(code);
+            }
+          });
+        });
+
+        peer.on('error', () => {
+          if (!connected) {
+            clearTimeout(connectTimeout);
+            try { peer.destroy(); } catch (_) {}
+            state.online.peer = null;
+            startLocalBusGuest(code);
+          }
+        });
+      } catch (_) {
+        clearTimeout(connectTimeout);
+        startLocalBusGuest(code);
+      }
+    }
+
+    function broadcastOnline(payload) {
+      if (state.online.transport === 'localbus') {
+        sendLocalBus(state.online.roomCode, { from: 'host', to: 'guests', payload });
+        return;
+      }
+      Object.values(state.online.guestConns).forEach(conn => {
+        if (conn.open) conn.send(payload);
+      });
+    }
+
+    function broadcastLobby() {
+      renderOnlineLobby();
+      broadcastOnline({ type: 'lobby', players: state.online.lobbyPlayers });
+    }
+
+    function broadcastGameState(toastMsg = '') {
+      const snapshot = {
+        inGame: state.inGame,
+        gameOver: state.gameOver,
+        players: state.players,
+        currentPlayerIndex: state.currentPlayerIndex,
+        round: state.round,
+        dice: state.dice,
+        held: state.held,
+        rollsLeft: state.rollsLeft,
+        turnMaxRolls: state.turnMaxRolls,
+        hasRolledThisTurn: state.hasRolledThisTurn,
+        isRolling: state.isRolling,
+        rollSpeed: state.rollSpeed,
+        rollsPerTurn: state.rollsPerTurn,
+        carryOverMode: state.carryOverMode,
+        carryOverCap: state.carryOverCap,
+        bonusThreshold: state.bonusThreshold,
+        upperBonusPoints: state.upperBonusPoints,
+        multiYachtBonus: state.multiYachtBonus,
+        jokerEnabled: state.jokerEnabled
+      };
+      broadcastOnline({ type: 'sync', state: snapshot, toastMsg });
+    }
+
+    function handleHostMessage(senderId, msg) {
+      if (!msg || !msg.type) return;
+      if (msg.type === 'join') {
+        if (state.online.lobbyPlayers.length >= 10 || state.inGame) return;
+        if (state.online.lobbyPlayers.some(p => p.peerId === senderId)) return;
+        const idx = state.online.lobbyPlayers.length;
+        state.online.lobbyPlayers.push({
+          peerId: senderId,
+          name: (msg.name || `ゲスト${idx + 1}`).slice(0, 12),
+          isAI: false,
+          icon: msg.icon || makeDefaultIcon(idx),
+          color: PLAYER_COLORS[idx % PLAYER_COLORS.length]
+        });
+        broadcastLobby();
+      } else if (msg.type === 'update_profile') {
+        const p = state.online.lobbyPlayers.find(x => x.peerId === senderId);
+        if (p) {
+          p.name = (msg.name || p.name).slice(0, 12);
+          p.icon = msg.icon || p.icon;
+          broadcastLobby();
+        }
+      } else if (msg.type === 'action') {
+        const cur = state.players[state.currentPlayerIndex];
+        if (!cur || cur.peerId !== senderId) return;
+        if (msg.action === 'roll') rollDice();
+        else if (msg.action === 'hold') toggleHold(msg.idx);
+        else if (msg.action === 'score') selectCategory(msg.catId);
+      }
+    }
+
+    function sendToHost(payload) {
+      if (state.online.transport === 'localbus') {
+        sendLocalBus(state.online.roomCode, { from: state.online.myPeerId, to: 'host', payload });
+        return;
+      }
+      if (state.online.hostConn && state.online.hostConn.open) {
+        state.online.hostConn.send(payload);
+      }
+    }
+
+    function initLocalBus(code, onPacket) {
+      const channelName = 'yacht-10p-bus-' + code;
+      const storageKey = 'yacht-10p-pkt-' + code;
+      if (typeof BroadcastChannel !== 'undefined') {
+        const bc = new BroadcastChannel(channelName);
+        bc.onmessage = (ev) => onPacket(ev.data);
+        state.online.bc = bc;
+      }
+      const onStorage = (ev) => {
+        if (ev.key !== storageKey || !ev.newValue) return;
+        try {
+          const parsed = JSON.parse(ev.newValue);
+          if (parsed && parsed.pkt) onPacket(parsed.pkt);
+        } catch (_) {}
+      };
+      window.addEventListener('storage', onStorage);
+      state.online.storageHandler = onStorage;
+    }
+
+    function sendLocalBus(code, pkt) {
+      const channelName = 'yacht-10p-bus-' + code;
+      const storageKey = 'yacht-10p-pkt-' + code;
+      try {
+        if (state.online.bc) state.online.bc.postMessage(pkt);
+      } catch (_) {}
+      try {
+        localStorage.setItem(storageKey, JSON.stringify({ pkt, ts: Date.now() + Math.random() }));
+      } catch (_) {}
+    }
+
+    function handleGuestReceive(msg) {
+      if (!msg || !msg.type) return;
+      if (msg.type === 'error') {
+        showToast(msg.message);
+        leaveOnlineRoom();
+      } else if (msg.type === 'lobby') {
+        state.online.lobbyPlayers = msg.players;
+        renderOnlineLobby();
+      } else if (msg.type === 'sync') {
+        const s = msg.state;
+        Object.assign(state, s);
+        els.setupScreen.classList.add('hidden');
+        els.gameScreen.classList.remove('hidden');
+        els.btnCancelSetup.classList.remove('hidden');
+        if (!state.gameOver) els.gameoverModal.classList.add('hidden');
+        renderAll();
+        if (state.gameOver) showGameOverModal();
+        if (msg.toastMsg) showToast(msg.toastMsg);
+      }
+    }
+
+    function renderOnlineLobby() {
+      els.onlineLobbyPlayers.innerHTML = '';
+      state.online.lobbyPlayers.forEach((p, idx) => {
+        const card = document.createElement('div');
+        card.className = 'bg-slate-950/80 border border-slate-800 rounded-xl p-2 flex items-center gap-2';
+        card.innerHTML = `
+          ${renderAvatarHtml(p.icon, 'w-8 h-8 text-base')}
+          <div class="min-w-0 flex-1">
+            <div class="text-xs font-bold text-white truncate">${escapeHtml(p.name)}</div>
+            <div class="text-[10px] text-slate-400">${idx === 0 ? 'ホスト' : (p.isAI ? '🤖 AI' : '参加者')}</div>
+          </div>
+        `;
+        els.onlineLobbyPlayers.appendChild(card);
+      });
+    }
+
+    // ==========================================
+    // UI レンダリング & モード切替
+    // ==========================================
+    let toastTimer = null;
+    function showToast(msg) {
+      els.toast.textContent = msg;
+      els.toast.classList.remove('opacity-0');
+      els.toast.classList.add('opacity-100');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        els.toast.classList.remove('opacity-100');
+        els.toast.classList.add('opacity-0');
+      }, 2500);
+    }
+
+    function getSpeedMs() {
+      if (state.rollSpeed === 'fast') return 260;
+      if (state.rollSpeed === 'slow') return 700;
+      return 450;
+    }
+
+    function updateModeUI() {
+      const isOnline = state.playMode === 'online';
+      if (isOnline) {
+        els.tabOnlineMode.className = 'px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-indigo-600 text-white transition';
+        els.tabLocalMode.className = 'px-4 py-2 rounded-lg text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition';
+        els.onlinePanel.classList.remove('hidden');
+        els.localPresets.classList.add('hidden');
+        els.localCountWrapper.classList.add('hidden');
+        els.setupPlayersGrid.classList.add('hidden');
+        els.modeBadge.textContent = '🌐 オンライン対応 (最大10人)';
+      } else {
+        els.tabLocalMode.className = 'px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-sky-600 text-white transition';
+        els.tabOnlineMode.className = 'px-4 py-2 rounded-lg text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition';
+        els.onlinePanel.classList.add('hidden');
+        els.localPresets.classList.remove('hidden');
+        els.localCountWrapper.classList.remove('hidden');
+        els.setupPlayersGrid.classList.remove('hidden');
+        els.btnStartGame.classList.remove('hidden');
+        els.modeBadge.textContent = '最大10人対応';
+      }
+    }
+
+    function renderSetupPlayers() {
+      const count = parseInt(els.playerCountSelect.value, 10);
+      state.playerCount = count;
+      els.setupPlayersGrid.innerHTML = '';
+
+      for (let i = 0; i < count; i++) {
+        const p = state.setupPlayers[i];
+        const card = document.createElement('div');
+        card.className = 'bg-slate-950/70 border border-slate-800 rounded-xl p-2.5 flex flex-col gap-2';
+
+        const header = document.createElement('div');
+        header.className = 'flex items-center justify-between gap-2';
+
+        const iconBtn = document.createElement('button');
+        iconBtn.type = 'button';
+        iconBtn.className = 'flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white transition';
+        iconBtn.title = 'アイコンを編集';
+        iconBtn.innerHTML = `${renderAvatarHtml(p.icon, 'w-7 h-7 text-sm')}<span>#${i + 1}</span>`;
+        iconBtn.addEventListener('click', () => openIconEditor(i));
+
+        const toggleBtn = document.createElement('button');
+        toggleBtn.type = 'button';
+        toggleBtn.className = `px-2 py-0.5 rounded-md text-[11px] font-bold transition ${
+          p.isAI
+            ? 'bg-purple-500/20 text-purple-300 border border-purple-400/40'
+            : 'bg-sky-500/20 text-sky-300 border border-sky-400/40'
+        }`;
+        toggleBtn.textContent = p.isAI ? '🤖 AI' : '👤 人間';
+        toggleBtn.addEventListener('click', () => {
+          p.isAI = !p.isAI;
+          if (p.isAI && p.name.startsWith('プレイヤー')) p.name = `AI ${i + 1}`;
+          else if (!p.isAI && p.name.startsWith('AI ')) p.name = `プレイヤー${i + 1}`;
+          renderSetupPlayers();
+        });
+
+        header.appendChild(iconBtn);
+        header.appendChild(toggleBtn);
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.maxLength = 12;
+        input.value = p.name;
+        input.className = 'w-full rounded-lg bg-slate-800/90 border border-slate-700 px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-sky-500';
+        input.addEventListener('input', (e) => { p.name = e.target.value; });
+
+        card.appendChild(header);
+        card.appendChild(input);
+        els.setupPlayersGrid.appendChild(card);
+      }
+    }
+
+    function isMyTurnControlAllowed() {
+      if (state.gameOver || state.isRolling) return false;
+      const cur = state.players[state.currentPlayerIndex];
+      if (!cur || cur.isAI) return false;
+      if (state.playMode === 'online' && state.online.role) {
+        return cur.peerId === state.online.myPeerId;
+      }
+      return true;
+    }
+
+    function startGame() {
+      if (state.playMode === 'online' && state.online.role === 'guest') return;
+      if (state.playMode === 'online' && !state.online.role) {
+        showToast('先に部屋を作成するか参加してください');
+        return;
+      }
+
+      clearTimeout(state.aiTimer);
+      clearTimeout(state.rollTimer);
+
+      state.rollSpeed = els.rollSpeedSelect.value;
+      state.rollsPerTurn = clampInt(els.rollsPerTurnInput.value, 1, 10, 3);
+      state.carryOverMode = els.carryOverSelect.value;
+      state.carryOverCap = clampInt(els.carryOverCapInput.value, 1, 10, 3);
+      state.bonusThreshold = clampInt(els.bonusThresholdInput.value, 0, 105, 63);
+      state.upperBonusPoints = clampInt(els.upperBonusPointsInput.value, 0, 250, 35);
+      state.multiYachtBonus = clampInt(els.multiYachtInput.value, 0, 250, 100);
+      state.jokerEnabled = els.jokerRuleSelect.value === 'on';
+
+      state.players = [];
+      if (state.playMode === 'online' && state.online.role === 'host') {
+        state.online.lobbyPlayers.forEach((lp, i) => {
+          const scores = {};
+          CATEGORIES.forEach(c => { scores[c.id] = null; });
+          state.players.push({
+            id: i,
+            peerId: lp.peerId,
+            name: lp.name,
+            isAI: lp.isAI,
+            icon: lp.icon,
+            color: lp.color || PLAYER_COLORS[i % PLAYER_COLORS.length],
+            scores,
+            yachtBonusTotal: 0,
+            savedRolls: 0
+          });
+        });
+      } else {
+        state.playerCount = parseInt(els.playerCountSelect.value, 10);
+        for (let i = 0; i < state.playerCount; i++) {
+          const sp = state.setupPlayers[i];
+          const scores = {};
+          CATEGORIES.forEach(c => { scores[c.id] = null; });
+          state.players.push({
+            id: i,
+            peerId: null,
+            name: (sp.name || `プレイヤー${i + 1}`).trim() || `プレイヤー${i + 1}`,
+            isAI: sp.isAI,
+            icon: sp.icon || makeDefaultIcon(i),
+            color: PLAYER_COLORS[i % PLAYER_COLORS.length],
+            scores,
+            yachtBonusTotal: 0,
+            savedRolls: 0
+          });
+        }
+      }
+
+      state.inGame = true;
+      state.gameOver = false;
+      state.currentPlayerIndex = 0;
+      state.round = 1;
+      resetTurnState();
+
+      els.setupScreen.classList.add('hidden');
+      els.gameoverModal.classList.add('hidden');
+      els.gameScreen.classList.remove('hidden');
+      els.btnCancelSetup.classList.remove('hidden');
+
+      renderAll();
+      if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState();
+      maybeRunAI();
+    }
+
+    function resetTurnState() {
+      const cur = state.players[state.currentPlayerIndex];
+      const bonusRolls = cur ? (cur.savedRolls || 0) : 0;
+      if (cur) cur.savedRolls = 0;
+      state.rollsLeft = state.rollsPerTurn + bonusRolls;
+      state.turnMaxRolls = state.rollsLeft;
+      state.hasRolledThisTurn = false;
+      state.isRolling = false;
+      state.held = [false, false, false, false, false];
+      state.dice = [1, 2, 3, 4, 5];
+    }
+
+    function renderAll() {
+      renderHeaderAndStrip();
+      renderDice();
+      renderScoreTable();
+    }
+
+    function renderHeaderAndStrip() {
+      els.roundIndicator.textContent = state.round;
+      const cur = state.players[state.currentPlayerIndex];
+
+      if (state.gameOver) {
+        els.turnBanner.innerHTML = `<span class="text-amber-300">🏆 全13ラウンド終了・最終結果集計済み</span>`;
+        els.btnShowRanking.classList.remove('hidden');
+        els.scorecardSubtitle.textContent = '（最終スコア確定・全プレイヤーの合計点を表示中）';
+      } else {
+        const isMine = isMyTurnControlAllowed();
+        const waitSuffix = cur.isAI ? '(AI思考中)' : (state.playMode === 'online' ? (isMine ? '(あなたの番！)' : '(相手の操作待ち)') : '');
+        els.turnBanner.innerHTML = `
+          ${renderAvatarHtml(cur.icon, 'w-5 h-5 text-[11px]')}
+          <span>${escapeHtml(cur.name)} のターン ${waitSuffix}</span>
+        `;
+        els.btnShowRanking.classList.add('hidden');
+        els.scorecardSubtitle.textContent = '（現在の手番プレイヤーの緑色セルをクリックして確定）';
+      }
+
+      els.playersStrip.innerHTML = '';
+      state.players.forEach((p, idx) => {
+        const isCurrent = idx === state.currentPlayerIndex && !state.gameOver;
+        const { total } = getPlayerTotals(p);
+        const chip = document.createElement('div');
+        chip.className = `rounded-xl px-2 py-1.5 border transition flex flex-col justify-between ${
+          isCurrent ? 'bg-slate-800 border-sky-400 shadow-md shadow-sky-500/20' : 'bg-slate-950/60 border-slate-800/80 opacity-85'
+        }`;
+        chip.innerHTML = `
+          <div class="flex items-center justify-between gap-1">
+            <span class="flex items-center gap-1 min-w-0">
+              ${renderAvatarHtml(p.icon, 'w-5 h-5 text-[10px]')}
+              <span class="text-[11px] font-bold truncate text-white">${escapeHtml(p.name)}</span>
+            </span>
+            ${p.isAI ? '<span class="text-[9px] px-1 rounded bg-purple-500/20 text-purple-300">AI</span>' : ''}
+          </div>
+          <div class="flex items-center justify-between mt-0.5">
+            <span class="text-[10px] font-bold text-amber-300">${p.savedRolls > 0 ? `+${p.savedRolls}🎲` : ''}</span>
+            <span class="text-xs font-extrabold ${state.gameOver ? 'text-amber-300' : 'text-slate-500'}">${state.gameOver ? `${total}点` : '集計待ち'}</span>
+          </div>
+        `;
+        els.playersStrip.appendChild(chip);
+      });
+
+      els.rollsDots.innerHTML = '';
+      const maxDots = Math.max(state.rollsPerTurn, state.turnMaxRolls || state.rollsPerTurn);
+      for (let i = 0; i < maxDots; i++) {
+        const dot = document.createElement('span');
+        const isActive = i < state.rollsLeft;
+        const isCarry = i >= state.rollsPerTurn;
+        dot.className = `w-3 h-3 rounded-full transition ${
+          isActive
+            ? (isCarry ? 'bg-amber-400 shadow-sm shadow-amber-400/50' : 'bg-sky-400 shadow-sm shadow-sky-400/50')
+            : 'bg-slate-700'
+        }`;
+        els.rollsDots.appendChild(dot);
+      }
+
+      const canRoll = isMyTurnControlAllowed() && state.rollsLeft > 0;
+      els.btnRoll.disabled = !canRoll;
+      if (state.gameOver) {
+        els.btnRoll.textContent = '🏁 ゲーム終了（集計完了）';
+      } else if (state.playMode === 'online' && !isMyTurnControlAllowed() && !cur.isAI) {
+        els.btnRoll.textContent = `⏳ ${cur.name} の操作中...`;
+      } else {
+        els.btnRoll.textContent = state.rollsLeft > 0
+          ? `🎲 サイコロを振る (残り${state.rollsLeft}回)`
+          : '📋 スコアを選択してください';
+      }
+
+      els.handAnnouncement.textContent = '';
+      if (state.hasRolledThisTurn && !state.isRolling) {
+        const counts = getCounts(state.dice);
+        const uniq = new Set(state.dice);
+        if (isYachtDice(state.dice)) els.handAnnouncement.textContent = `✨ ${state.dice[0]}のヨット（基本${getYachtBaseScore(state.dice[0])}点）達成！`;
+        else if ([[1,2,3,4,5],[2,3,4,5,6]].some(s => s.every(n => uniq.has(n)))) els.handAnnouncement.textContent = '✨ 大ストレート成立！';
+        else if ([[1,2,3,4],[2,3,4,5],[3,4,5,6]].some(s => s.every(n => uniq.has(n)))) els.handAnnouncement.textContent = '✨ 小ストレート成立！';
+        else if (counts.some(c => c === 3) && counts.some(c => c === 2)) els.handAnnouncement.textContent = '✨ フルハウス成立！';
+        else if (counts.some(c => c >= 4)) els.handAnnouncement.textContent = '✨ フォーカード成立！';
+      }
+    }
+
+    function renderDice() {
+      els.diceContainer.innerHTML = '';
+      const canToggleHold = isMyTurnControlAllowed() && state.hasRolledThisTurn && state.rollsLeft > 0;
+
+      state.dice.forEach((val, idx) => {
+        const isHeld = state.held[idx];
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `die-btn relative flex flex-col items-center gap-1.5 focus:outline-none ${
+          isHeld ? 'held' : ''
+        } ${state.isRolling && !isHeld ? 'rolling' : ''} ${
+          canToggleHold ? 'cursor-pointer hover:-translate-y-0.5' : 'cursor-default'
+        }`;
+        btn.disabled = !canToggleHold;
+        btn.setAttribute('aria-label', `サイコロ${idx + 1}: ${val}`);
+
+        const face = document.createElement('div');
+        face.className = 'die-face';
+        const activePips = PIP_MAP[val] || [];
+        for (let p = 0; p < 9; p++) {
+          const pip = document.createElement('span');
+          pip.className = `pip ${activePips.includes(p) ? 'on' : ''} ${val === 1 && p === 4 ? 'red' : ''}`;
+          face.appendChild(pip);
+        }
+
+        const label = document.createElement('span');
+        label.className = `text-[10px] font-extrabold px-2 py-0.5 rounded-full transition ${
+          isHeld ? 'bg-yellow-400 text-slate-950' : 'bg-slate-800/80 text-slate-400'
+        }`;
+        label.textContent = isHeld ? 'HOLD' : `#${idx + 1}`;
+
+        btn.appendChild(face);
+        btn.appendChild(label);
+        if (canToggleHold) btn.addEventListener('click', () => handlePlayerHold(idx));
+        els.diceContainer.appendChild(btn);
+      });
+    }
+
+    function renderScoreTable() {
+      const curIdx = state.currentPlayerIndex;
+      const canSelect = isMyTurnControlAllowed() && state.hasRolledThisTurn;
+
+      let theadHtml = '<tr><th class="sticky-col bg-slate-950 text-left px-3 py-2.5 border-b border-r border-slate-800 min-w-[130px]">役 / カテゴリー</th>';
+      state.players.forEach((p, idx) => {
+        const active = idx === curIdx && !state.gameOver;
+        theadHtml += `
+          <th class="px-2 py-2.5 border-b border-slate-800 text-center min-w-[84px] ${active ? 'bg-sky-950/60 text-sky-300' : ''}">
+            <div class="flex items-center justify-center gap-1">
+              ${renderAvatarHtml(p.icon, 'w-5 h-5 text-[10px]')}
+              <span class="truncate max-w-[64px]">${escapeHtml(p.name)}</span>
+            </div>
+          </th>
+        `;
+      });
+      theadHtml += '</tr>';
+      els.scoreThead.innerHTML = theadHtml;
+      els.scoreTbody.innerHTML = '';
+
+      const addSectionRows = (sectionName) => {
+        CATEGORIES.filter(c => c.section === sectionName).forEach(cat => {
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-slate-800/30 transition-colors';
+          const th = document.createElement('td');
+          th.className = 'sticky-col bg-slate-900 px-3 py-2 border-r border-slate-800';
+          th.innerHTML = `<div class="font-semibold text-slate-200 text-xs sm:text-sm">${cat.name}</div><div class="text-[10px] text-slate-400">${cat.desc}</div>`;
+          tr.appendChild(th);
+
+          state.players.forEach((p, idx) => {
+            const td = document.createElement('td');
+            const val = p.scores[cat.id];
+            const isCurCol = idx === curIdx && !state.gameOver;
+            td.className = `px-2 py-2 text-center border-l border-slate-800/50 ${isCurCol ? 'bg-sky-950/20' : ''}`;
+
+            if (val !== null) {
+              td.innerHTML = `<span class="font-bold ${val === 0 ? 'text-slate-500' : 'text-white'}">${val}</span>`;
+            } else if (isCurCol && canSelect) {
+              const preview = calcCategoryScore(cat.id, state.dice, p.scores);
+              const btn = document.createElement('button');
+              btn.type = 'button';
+              btn.className = `w-full py-1 px-1.5 rounded-lg font-bold text-xs transition ${
+                preview > 0
+                  ? 'bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-300 border border-emerald-400/40'
+                  : 'bg-slate-800/70 hover:bg-rose-500/25 text-slate-400 hover:text-rose-300 border border-slate-700'
+              }`;
+              btn.textContent = `+${preview}`;
+              btn.addEventListener('click', () => handlePlayerScore(cat.id));
+              td.appendChild(btn);
+            } else {
+              td.innerHTML = `<span class="text-slate-700">-</span>`;
+            }
+            tr.appendChild(td);
+          });
+          els.scoreTbody.appendChild(tr);
+        });
+      };
+
+      addSectionRows('upper');
+
+      const subTr = document.createElement('tr');
+      subTr.className = 'bg-slate-950/60 font-semibold';
+      subTr.innerHTML = `<td class="sticky-col bg-slate-950 px-3 py-2 border-r border-slate-800 text-xs text-slate-300">上段合計 <span class="text-[10px] text-slate-400">(${state.bonusThreshold}以上で+${state.upperBonusPoints})</span></td>`;
+      state.players.forEach((p, idx) => {
+        const t = getPlayerTotals(p);
+        const bonusBadge = t.upperBonus > 0
+          ? `<span class="text-emerald-400 font-bold ml-1">+${state.upperBonusPoints}</span>`
+          : `<span class="text-slate-500 text-[10px] ml-1">(${t.upperSum}/${state.bonusThreshold})</span>`;
+        subTr.innerHTML += `<td class="px-2 py-2 text-center border-l border-slate-800/50 text-xs ${idx === curIdx && !state.gameOver ? 'bg-sky-950/20' : ''}">${t.upperSum}${bonusBadge}</td>`;
+      });
+      els.scoreTbody.appendChild(subTr);
+
+      addSectionRows('lower');
+
+      const ybTr = document.createElement('tr');
+      ybTr.className = 'bg-slate-950/40';
+      ybTr.innerHTML = `<td class="sticky-col bg-slate-950 px-3 py-1.5 border-r border-slate-800 text-xs text-amber-300">2回目以降ヨット合計 <span class="text-[10px] text-slate-400">(基本点+${state.multiYachtBonus})</span></td>`;
+      state.players.forEach((p, idx) => {
+        const t = getPlayerTotals(p);
+        ybTr.innerHTML += `<td class="px-2 py-1.5 text-center border-l border-slate-800/50 text-xs font-bold text-amber-300 ${idx === curIdx && !state.gameOver ? 'bg-sky-950/20' : ''}">${t.yachtBonus > 0 ? `+${t.yachtBonus}` : '-'}</td>`;
+      });
+      els.scoreTbody.appendChild(ybTr);
+
+      const totTr = document.createElement('tr');
+      totTr.className = 'bg-slate-950 font-extrabold text-sm border-t-2 border-slate-700';
+      totTr.innerHTML = `<td class="sticky-col bg-slate-950 px-3 py-3 border-r border-slate-800 text-white">合計スコア <span class="text-[10px] font-normal text-slate-400">${state.gameOver ? '(確定)' : '(終了後集計)'}</span></td>`;
+      state.players.forEach((p, idx) => {
+        const t = getPlayerTotals(p);
+        const displayScore = state.gameOver ? `${t.total}` : '???';
+        const scoreCls = state.gameOver ? 'text-amber-300' : 'text-slate-500';
+        totTr.innerHTML += `<td class="px-2 py-3 text-center border-l border-slate-800/50 ${scoreCls} ${idx === curIdx && !state.gameOver ? 'bg-sky-950/30' : ''}">${displayScore}</td>`;
+      });
+      els.scoreTbody.appendChild(totTr);
+    }
+
+    // ==========================================
+    // アクションディスパッチ（ローカル / オンライン対応）
+    // ==========================================
+    function handlePlayerRoll() {
+      if (!isMyTurnControlAllowed() || state.rollsLeft <= 0) return;
+      if (state.playMode === 'online' && state.online.role === 'guest') {
+        sendToHost({ type: 'action', action: 'roll' });
+        return;
+      }
+      rollDice();
+    }
+
+    function handlePlayerHold(idx) {
+      if (!isMyTurnControlAllowed() || !state.hasRolledThisTurn || state.rollsLeft <= 0) return;
+      if (state.playMode === 'online' && state.online.role === 'guest') {
+        sendToHost({ type: 'action', action: 'hold', idx });
+        return;
+      }
+      toggleHold(idx);
+    }
+
+    function handlePlayerScore(catId) {
+      if (!isMyTurnControlAllowed() || !state.hasRolledThisTurn) return;
+      if (state.playMode === 'online' && state.online.role === 'guest') {
+        sendToHost({ type: 'action', action: 'score', catId });
+        return;
+      }
+      selectCategory(catId);
+    }
+
+    function rollDice() {
+      if (state.gameOver || state.isRolling || state.rollsLeft <= 0) return;
+      state.isRolling = true;
+      state.hasRolledThisTurn = true;
+      state.rollsLeft--;
+      Sound.roll();
+      renderAll();
+      if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState();
+
+      state.rollTimer = setTimeout(() => {
+        for (let i = 0; i < 5; i++) {
+          if (!state.held[i]) state.dice[i] = Math.floor(Math.random() * 6) + 1;
+        }
+        state.isRolling = false;
+        let msg = '';
+        if (isYachtDice(state.dice)) {
+          Sound.yacht();
+          msg = '🎉 ヨット（5つ揃い）が出ました！';
+          showToast(msg);
+        }
+        renderAll();
+        if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState(msg);
+      }, getSpeedMs());
+    }
+
+    function toggleHold(idx) {
+      if (state.gameOver || !state.hasRolledThisTurn || state.isRolling || state.rollsLeft <= 0) return;
+      state.held[idx] = !state.held[idx];
+      Sound.hold();
+      renderDice();
+      if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState();
+    }
+
+    function selectCategory(catId) {
+      if (state.gameOver || !state.hasRolledThisTurn || state.isRolling) return;
+      const cur = state.players[state.currentPlayerIndex];
+      if (cur.scores[catId] !== null) return;
+
+      let msg = '';
+      if (isYachtDice(state.dice) && cur.scores.yacht > 0) {
+        const baseYachtPts = getYachtBaseScore(state.dice[0]);
+        const addBonus = baseYachtPts + state.multiYachtBonus;
+        cur.yachtBonusTotal = (cur.yachtBonusTotal || 0) + addBonus;
+        msg = `🔥 ${cur.name} が2回目以降ヨット（${baseYachtPts}点 + ボーナス${state.multiYachtBonus}点 = +${addBonus}点）獲得！`;
+        showToast(msg);
+      }
+
+      const pts = calcCategoryScore(catId, state.dice, cur.scores);
+      cur.scores[catId] = pts;
+
+      if (state.carryOverMode === 'unlimited') cur.savedRolls = state.rollsLeft;
+      else if (state.carryOverMode === 'capped') cur.savedRolls = Math.min(state.carryOverCap, state.rollsLeft);
+      else cur.savedRolls = 0;
+
+      if (cur.savedRolls > 0 && !msg) {
+        msg = `🎲 ${cur.name} が残りロール ${cur.savedRolls}回 を持ち越しました！`;
+        showToast(msg);
+      }
+
+      Sound.score();
+
+      if (state.currentPlayerIndex < state.players.length - 1) {
+        state.currentPlayerIndex++;
+      } else {
+        if (state.round >= 13) {
+          finishGame();
+          return;
+        }
+        state.round++;
+        state.currentPlayerIndex = 0;
+      }
+
+      resetTurnState();
+      renderAll();
+      if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState(msg);
+      maybeRunAI();
+    }
+
+    function maybeRunAI() {
+      if (state.gameOver) return;
+      if (state.playMode === 'online' && state.online.role === 'guest') return;
+      const cur = state.players[state.currentPlayerIndex];
+      if (!cur || !cur.isAI) return;
+
+      const stepDelay = Math.max(320, getSpeedMs() + 120);
+      const doAIStep = () => {
+        if (state.gameOver) return;
+        if (!state.hasRolledThisTurn || state.rollsLeft > 0) {
+          if (state.hasRolledThisTurn) {
+            state.held = aiChooseHolds(state.dice, cur.scores);
+            renderDice();
+            if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState();
+            if (state.held.every(Boolean)) {
+              state.aiTimer = setTimeout(() => {
+                selectCategory(aiChooseCategory(state.dice, cur.scores));
+              }, stepDelay);
+              return;
+            }
+          }
+          rollDice();
+          state.aiTimer = setTimeout(doAIStep, stepDelay + getSpeedMs());
+        } else {
+          selectCategory(aiChooseCategory(state.dice, cur.scores));
+        }
+      };
+      state.aiTimer = setTimeout(doAIStep, stepDelay);
+    }
+
+    function finishGame() {
+      state.gameOver = true;
+      renderAll();
+      if (state.playMode === 'online' && state.online.role === 'host') broadcastGameState();
+      showGameOverModal();
+    }
+
+    function showGameOverModal() {
+      Sound.win();
+      const ranked = state.players
+        .map(p => ({ player: p, ...getPlayerTotals(p) }))
+        .sort((a, b) => b.total - a.total);
+
+      const topScore = ranked[0].total;
+      const winners = ranked.filter(r => r.total === topScore).map(r => r.player.name);
+      els.winnerSubtitle.textContent = `優勝: ${winners.join(' & ')}（${topScore}点）`;
+
+      els.rankingList.innerHTML = '';
+      ranked.forEach((item, i) => {
+        const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}位`;
+        const row = document.createElement('div');
+        row.className = `flex items-center justify-between px-4 py-2.5 rounded-xl border ${
+          i === 0 ? 'bg-amber-500/15 border-amber-400/50' : 'bg-slate-950/70 border-slate-800'
+        }`;
+        row.innerHTML = `
+          <div class="flex items-center gap-3">
+            <span class="text-base font-extrabold w-8 text-center">${medal}</span>
+            ${renderAvatarHtml(item.player.icon, 'w-7 h-7 text-sm')}
+            <span class="font-bold text-white text-sm">${escapeHtml(item.player.name)}</span>
+            ${item.player.isAI ? '<span class="text-[10px] px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300">AI</span>' : ''}
+          </div>
+          <div class="text-right">
+            <span class="text-base font-extrabold text-sky-300">${item.total}点</span>
+            <span class="text-[11px] text-slate-400 ml-2">(上段:${item.upperSum}${item.upperBonus ? '+' + state.upperBonusPoints : ''})</span>
+          </div>
+        `;
+        els.rankingList.appendChild(row);
+      });
+
+      els.gameoverModal.classList.remove('hidden');
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function clampInt(val, min, max, fallback) {
+      const n = parseInt(val, 10);
+      if (Number.isNaN(n)) return fallback;
+      return Math.max(min, Math.min(max, n));
+    }
+
+    function bindRangeAndNumber(rangeEl, numEl, min, max, fallback) {
+      rangeEl.addEventListener('input', () => { numEl.value = rangeEl.value; });
+      numEl.addEventListener('input', () => {
+        const n = parseInt(numEl.value, 10);
+        if (!Number.isNaN(n)) rangeEl.value = Math.max(min, Math.min(max, n));
+      });
+      numEl.addEventListener('blur', () => {
+        const c = clampInt(numEl.value, min, max, fallback);
+        numEl.value = c;
+        rangeEl.value = c;
+      });
+    }
+
+    // ==========================================
+    // イベント登録
+    // ==========================================
+    els.btnCopyDataUrl.addEventListener('click', () => {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const bytes = new TextEncoder().encode(htmlContent);
+      let binary = '';
+      for (let i = 0; i < bytes.byteLength; i++) {
+        binary += String.fromCharCode(bytes[i]);
+      }
+      const dataUrl = 'data:text/html;charset=utf-8;base64,' + btoa(binary);
+
+      const ta = document.createElement('textarea');
+      ta.value = dataUrl;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      let ok = false;
+      try { ok = document.execCommand('copy'); } catch (_) {}
+      document.body.removeChild(ta);
+
+      if (!ok && navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(dataUrl).catch(() => {});
+      }
+      showToast('アドレスバー用URLをコピーしました！新しいタブのURL欄に貼り付けて開けます');
+    });
+
+    els.btnDownloadHtml.addEventListener('click', () => {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'yacht_10players.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('yacht_10players.html をダウンロードしました！友達に送って開けます');
+    });
+
+    els.tabLocalMode.addEventListener('click', () => {
+      state.playMode = 'local';
+      updateModeUI();
+    });
+    els.tabOnlineMode.addEventListener('click', () => {
+      state.playMode = 'online';
+      if (!els.hostRoomCode.value) els.hostRoomCode.value = generateRoomCode();
+      updateModeUI();
+    });
+
+    els.btnEditMyIcon.addEventListener('click', () => openIconEditor('online'));
+    els.myOnlineName.addEventListener('input', () => {
+      state.online.myName = els.myOnlineName.value.trim() || 'プレイヤー';
+    });
+    const btnRandomCode = document.getElementById('btn-random-code');
+    if (btnRandomCode) {
+      btnRandomCode.addEventListener('click', () => {
+        els.hostRoomCode.value = generateRoomCode();
+        showToast(`新しい部屋番号 ${els.hostRoomCode.value} を生成しました`);
+      });
+    }
+    els.btnCreateRoom.addEventListener('click', createOnlineRoom);
+    els.btnJoinRoom.addEventListener('click', joinOnlineRoom);
+    els.btnLeaveRoom.addEventListener('click', leaveOnlineRoom);
+    els.btnCopyRoomCode.addEventListener('click', () => {
+      const code = els.lobbyRoomCodeDisplay.textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).catch(() => {});
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = code;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      showToast(`部屋番号 ${code} をコピーしました`);
+    });
+    els.btnCopyInviteLink.addEventListener('click', () => {
+      const code = els.lobbyRoomCodeDisplay.textContent;
+      const url = new URL(window.location.href);
+      url.searchParams.set('room', code);
+      const inviteUrl = url.toString();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(inviteUrl).catch(() => {});
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = inviteUrl;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      showToast(`招待リンク（部屋 #${code}）をコピーしました`);
+    });
+    els.btnLobbyAddAi.addEventListener('click', () => {
+      if (state.online.role !== 'host') return;
+      const idx = state.online.lobbyPlayers.length;
+      if (idx >= 10) { showToast('最大10人までです'); return; }
+      state.online.lobbyPlayers.push({
+        peerId: `ai-${Date.now()}-${idx}`,
+        name: `AI ${idx + 1}`,
+        isAI: true,
+        icon: makeDefaultIcon(idx),
+        color: PLAYER_COLORS[idx % PLAYER_COLORS.length]
+      });
+      broadcastLobby();
+    });
+
+    bindRangeAndNumber(els.rollsPerTurnRange, els.rollsPerTurnInput, 1, 10, 3);
+    bindRangeAndNumber(els.bonusThresholdRange, els.bonusThresholdInput, 0, 105, 63);
+    bindRangeAndNumber(els.upperBonusPointsRange, els.upperBonusPointsInput, 0, 250, 35);
+    bindRangeAndNumber(els.multiYachtRange, els.multiYachtInput, 0, 250, 100);
+
+    els.carryOverSelect.addEventListener('change', () => {
+      if (els.carryOverSelect.value === 'capped') els.carryOverCapInput.classList.remove('hidden');
+      else els.carryOverCapInput.classList.add('hidden');
+    });
+    els.carryOverCapInput.addEventListener('blur', () => {
+      els.carryOverCapInput.value = clampInt(els.carryOverCapInput.value, 1, 10, 3);
+    });
+
+    els.playerCountSelect.addEventListener('change', renderSetupPlayers);
+    els.btnCountMinus.addEventListener('click', () => {
+      const cur = parseInt(els.playerCountSelect.value, 10);
+      if (cur > 1) { els.playerCountSelect.value = String(cur - 1); renderSetupPlayers(); }
+    });
+    els.btnCountPlus.addEventListener('click', () => {
+      const cur = parseInt(els.playerCountSelect.value, 10);
+      if (cur < 10) { els.playerCountSelect.value = String(cur + 1); renderSetupPlayers(); }
+    });
+
+    els.btnPreset10Humans.addEventListener('click', () => {
+      els.playerCountSelect.value = '10';
+      state.setupPlayers.forEach((p, i) => { p.isAI = false; p.name = `プレイヤー${i + 1}`; });
+      renderSetupPlayers();
+    });
+    els.btnPreset1v9.addEventListener('click', () => {
+      els.playerCountSelect.value = '10';
+      state.setupPlayers.forEach((p, i) => { p.isAI = i > 0; p.name = i === 0 ? 'あなた' : `AI ${i + 1}`; });
+      renderSetupPlayers();
+    });
+
+    els.btnStartGame.addEventListener('click', startGame);
+    els.btnRematch.addEventListener('click', startGame);
+    els.btnViewScorecard.addEventListener('click', () => els.gameoverModal.classList.add('hidden'));
+    els.btnShowRanking.addEventListener('click', () => els.gameoverModal.classList.remove('hidden'));
+
+    els.btnOpenSetup.addEventListener('click', () => {
+      clearTimeout(state.aiTimer);
+      els.setupScreen.classList.remove('hidden');
+      els.gameScreen.classList.add('hidden');
+      renderSetupPlayers();
+    });
+    els.btnCancelSetup.addEventListener('click', () => {
+      if (!state.inGame) return;
+      els.setupScreen.classList.add('hidden');
+      els.gameScreen.classList.remove('hidden');
+      maybeRunAI();
+    });
+    els.btnBackToSetup.addEventListener('click', () => {
+      els.gameoverModal.classList.add('hidden');
+      els.setupScreen.classList.remove('hidden');
+      els.gameScreen.classList.add('hidden');
+      renderSetupPlayers();
+    });
+
+    els.btnRoll.addEventListener('click', handlePlayerRoll);
+
+    els.btnSound.addEventListener('click', () => {
+      Sound.muted = !Sound.muted;
+      els.soundIcon.textContent = Sound.muted ? '🔇' : '🔊';
+      els.soundLabel.textContent = Sound.muted ? 'ミュート' : '効果音 ON';
+    });
+
+    els.btnRules.addEventListener('click', () => els.rulesModal.classList.remove('hidden'));
+    els.btnCloseRules.addEventListener('click', () => els.rulesModal.classList.add('hidden'));
+    els.rulesModal.addEventListener('click', (e) => {
+      if (e.target === els.rulesModal) els.rulesModal.classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!state.inGame || state.gameOver || !els.setupScreen.classList.contains('hidden')) return;
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (!els.btnRoll.disabled) handlePlayerRoll();
+      } else if (['Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5'].includes(e.code)) {
+        const idx = parseInt(e.code.replace('Digit', ''), 10) - 1;
+        handlePlayerHold(idx);
+      }
+    });
+
+    window.onload = () => {
+      initIconModal();
+      renderMyOnlineAvatar();
+      renderSetupPlayers();
+      const params = new URLSearchParams(window.location.search);
+      const roomParam = params.get('room');
+      if (roomParam) {
+        state.playMode = 'online';
+        els.joinRoomCode.value = roomParam.trim().toUpperCase().replace(/[^A-Z0-9_-]/g, '');
+        showToast(`招待リンクから部屋 #${els.joinRoomCode.value} を読み込みました！「部屋に参加」を押してください`);
+      }
+      updateModeUI();
+    };
+  </script>
+
+</body></html>
